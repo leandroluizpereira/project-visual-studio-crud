@@ -1,5 +1,5 @@
 # project-visual-studio-crud
- projeto 7° semestre : Sistema de labóratorio de agendamento para pacientes e acesso ao administrador (funcionario) para visualizar os registros dos pacientes.  
+ projeto 7° semestre : Sistema de labóratorio de agendamento .
 
 ## Projeto
 - [ ] criar um sistema em C# conectado com o banco de dados mysql
