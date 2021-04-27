@@ -1,0 +1,13 @@
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\LaboratorioSystem.exe.config
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\LaboratorioSystem.exe
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\LaboratorioSystem.pdb
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.csprojAssemblyReference.cache
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form1.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Properties.Resources.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.csproj.GenerateResource.cache
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.exe
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.pdb
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form2.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form3.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form4.resources
