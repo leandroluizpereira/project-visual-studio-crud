@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 using MySql.Data.MySqlClient;
 
 
@@ -14,6 +15,8 @@ namespace LaboratorioSystem
 {
     public partial class Form2 : Form
     {
+        Thread nt;
+
         public Form2()
         {
             InitializeComponent();
@@ -62,10 +65,24 @@ namespace LaboratorioSystem
         {
 
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
 
+            this.Close();
+            nt = new Thread(novoForm1);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
         }
+
+        private void novoForm1()
+        {
+            Application.Run(new Form1());
+        }
+
+
     }
-}
+
+
+
+    }
+
