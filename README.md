@@ -14,4 +14,4 @@
  - [x] DataGridView
  - [x] PictureBox.
  - [x] Painel
-- [ ] O sistema deve permitir cadastrar novos usuários e produtos/serviços
+- [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
