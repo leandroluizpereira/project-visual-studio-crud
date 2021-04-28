@@ -46,7 +46,6 @@ namespace LaboratorioSystem
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.lblRua = new System.Windows.Forms.Label();
             this.lblExame = new System.Windows.Forms.Label();
-            this.checkedListUnidades = new System.Windows.Forms.CheckedListBox();
             this.txtRua = new System.Windows.Forms.TextBox();
             this.lblUnidades = new System.Windows.Forms.Label();
             this.lblNumero = new System.Windows.Forms.Label();
@@ -55,14 +54,26 @@ namespace LaboratorioSystem
             this.lblBairro = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.comboUnidades = new System.Windows.Forms.ComboBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 7);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(315, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 31);
             this.label2.TabIndex = 2;
@@ -72,7 +83,8 @@ namespace LaboratorioSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(159, 47);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(362, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 13);
             this.label1.TabIndex = 3;
@@ -81,7 +93,14 @@ namespace LaboratorioSystem
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.comboUnidades);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtCelular);
@@ -98,20 +117,21 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.checkedListBox1);
             this.panel1.Controls.Add(this.lblRua);
             this.panel1.Controls.Add(this.lblExame);
-            this.panel1.Controls.Add(this.checkedListUnidades);
             this.panel1.Controls.Add(this.txtRua);
             this.panel1.Controls.Add(this.lblUnidades);
             this.panel1.Controls.Add(this.lblNumero);
             this.panel1.Controls.Add(this.txtNumero);
             this.panel1.Controls.Add(this.txtBairro);
             this.panel1.Controls.Add(this.lblBairro);
-            this.panel1.Location = new System.Drawing.Point(12, 71);
+            this.panel1.Location = new System.Drawing.Point(236, 86);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(455, 332);
+            this.panel1.Size = new System.Drawing.Size(652, 332);
             this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // txtCelular
             // 
+            this.txtCelular.BackColor = System.Drawing.Color.White;
             this.txtCelular.Location = new System.Drawing.Point(60, 53);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(123, 20);
@@ -128,6 +148,7 @@ namespace LaboratorioSystem
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.Location = new System.Drawing.Point(250, 17);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(187, 20);
@@ -145,6 +166,7 @@ namespace LaboratorioSystem
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.ForeColor = System.Drawing.Color.Black;
             this.lblNome.Location = new System.Drawing.Point(19, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 13);
@@ -154,7 +176,7 @@ namespace LaboratorioSystem
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(280, 256);
+            this.lblValor.Location = new System.Drawing.Point(220, 225);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(30, 13);
             this.lblValor.TabIndex = 16;
@@ -162,24 +184,29 @@ namespace LaboratorioSystem
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(106, 283);
+            this.btnSalvar.BackColor = System.Drawing.Color.Green;
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(283, 232);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(230, 28);
+            this.btnSalvar.Size = new System.Drawing.Size(124, 37);
             this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "Agendar ";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 256);
+            this.label3.Location = new System.Drawing.Point(46, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 13);
             this.label3.TabIndex = 15;
             this.label3.Text = "Valor a ser pago no dia do exame :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.Color.White;
             this.txtNome.Location = new System.Drawing.Point(60, 17);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(151, 20);
@@ -210,9 +237,9 @@ namespace LaboratorioSystem
             "Ultrassonografia ",
             "Anaçises Clinica",
             "Teste do Covid"});
-            this.checkedListBox1.Location = new System.Drawing.Point(326, 127);
+            this.checkedListBox1.Location = new System.Drawing.Point(287, 127);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(109, 79);
+            this.checkedListBox1.Size = new System.Drawing.Size(117, 64);
             this.checkedListBox1.TabIndex = 14;
             // 
             // lblRua
@@ -227,25 +254,11 @@ namespace LaboratorioSystem
             // lblExame
             // 
             this.lblExame.AutoSize = true;
-            this.lblExame.Location = new System.Drawing.Point(228, 129);
+            this.lblExame.Location = new System.Drawing.Point(233, 131);
             this.lblExame.Name = "lblExame";
-            this.lblExame.Size = new System.Drawing.Size(99, 13);
+            this.lblExame.Size = new System.Drawing.Size(47, 13);
             this.lblExame.TabIndex = 10;
-            this.lblExame.Text = "Exame Disponiveis:";
-            // 
-            // checkedListUnidades
-            // 
-            this.checkedListUnidades.FormattingEnabled = true;
-            this.checkedListUnidades.Items.AddRange(new object[] {
-            "Labóratorio Av. Santo Amaro ",
-            "Labóratorio Av.Paulista",
-            "Labóratorio Moema",
-            "Labóratorio Av.Juscelino Kubitschek",
-            "Labóratorio Av Berrini"});
-            this.checkedListUnidades.Location = new System.Drawing.Point(59, 126);
-            this.checkedListUnidades.Name = "checkedListUnidades";
-            this.checkedListUnidades.Size = new System.Drawing.Size(165, 79);
-            this.checkedListUnidades.TabIndex = 13;
+            this.lblExame.Text = "Exames:";
             // 
             // txtRua
             // 
@@ -257,7 +270,7 @@ namespace LaboratorioSystem
             // lblUnidades
             // 
             this.lblUnidades.AutoSize = true;
-            this.lblUnidades.Location = new System.Drawing.Point(3, 128);
+            this.lblUnidades.Location = new System.Drawing.Point(6, 130);
             this.lblUnidades.Name = "lblUnidades";
             this.lblUnidades.Size = new System.Drawing.Size(55, 13);
             this.lblUnidades.TabIndex = 12;
@@ -299,7 +312,7 @@ namespace LaboratorioSystem
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(78, 230);
+            this.label4.Location = new System.Drawing.Point(87, 298);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(342, 13);
             this.label4.TabIndex = 24;
@@ -312,17 +325,92 @@ namespace LaboratorioSystem
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(23, 229);
+            this.label5.Location = new System.Drawing.Point(28, 297);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 25;
             this.label5.Text = "Atençâo:";
             // 
+            // comboUnidades
+            // 
+            this.comboUnidades.FormattingEnabled = true;
+            this.comboUnidades.Items.AddRange(new object[] {
+            "Labóratorio Av. Santo Amaro",
+            "Labóratorio Av. Paulista",
+            "Labóratorio Av. Moema",
+            "Labóratorio Av. Juscelino Kubitschek",
+            "Labóratorio Av. Berrini"});
+            this.comboUnidades.Location = new System.Drawing.Point(60, 127);
+            this.comboUnidades.Name = "comboUnidades";
+            this.comboUnidades.Size = new System.Drawing.Size(161, 21);
+            this.comboUnidades.TabIndex = 22;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(60, 252);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(105, 17);
+            this.radioButton1.TabIndex = 26;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "cartão de crédito";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(60, 161);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(161, 40);
+            this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 86);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 332);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 291);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(166, 252);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(64, 17);
+            this.radioButton2.TabIndex = 28;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Dinheiro";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 172);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Data:";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 430);
+            this.BackColor = System.Drawing.Color.Maroon;
+            this.ClientSize = new System.Drawing.Size(911, 442);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -331,6 +419,9 @@ namespace LaboratorioSystem
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,7 +446,6 @@ namespace LaboratorioSystem
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label lblRua;
         private System.Windows.Forms.Label lblExame;
-        private System.Windows.Forms.CheckedListBox checkedListUnidades;
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label lblUnidades;
         private System.Windows.Forms.Label lblNumero;
@@ -364,5 +454,12 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Label lblBairro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboUnidades;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label6;
     }
 }

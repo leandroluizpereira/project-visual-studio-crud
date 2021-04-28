@@ -10,4 +10,3 @@ C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\La
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.pdb
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form2.resources
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form3.resources
-C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form4.resources
