@@ -8,10 +8,10 @@
  - [x] TextBox
  - [x] Button
  - [x] Checkbox
- - [ ] ComboBox
+ - [x] ComboBox
  - [x] ListBox
- - [ ] RadioButton
- - [ ] DataGridView
- - [ ] PictureBox.
+ - [x] RadioButton
+ - [x] DataGridView
+ - [x] PictureBox.
  - [x] Painel
 - [ ] O sistema deve permitir cadastrar novos usuários e produtos/serviços
