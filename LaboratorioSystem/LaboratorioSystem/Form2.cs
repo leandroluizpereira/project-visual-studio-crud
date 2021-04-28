@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace LaboratorioSystem
 {
@@ -39,6 +41,15 @@ namespace LaboratorioSystem
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
+            String sql = "insert into tbpaciente(nome) values('" + txtNome.Text + "')";
+            MySqlCommand cmm = new MySqlCommand(sql, conn);
+            conn.Open();
+            cmm.ExecuteNonQuery();
+            cmm.Dispose();
+            conn.Close();
+
+
 
         }
 

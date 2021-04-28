@@ -34,12 +34,12 @@ namespace LaboratorioSystem
             this.btnAgendar = new System.Windows.Forms.Button();
             this.lblAdministrador = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnLogar = new System.Windows.Forms.Button();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.btnLogar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -62,10 +62,10 @@ namespace LaboratorioSystem
             // lblAgendar
             // 
             this.lblAgendar.AutoSize = true;
-            this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgendar.Location = new System.Drawing.Point(44, 53);
+            this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgendar.Location = new System.Drawing.Point(41, 60);
             this.lblAgendar.Name = "lblAgendar";
-            this.lblAgendar.Size = new System.Drawing.Size(65, 18);
+            this.lblAgendar.Size = new System.Drawing.Size(73, 18);
             this.lblAgendar.TabIndex = 4;
             this.lblAgendar.Text = "Paciente";
             this.lblAgendar.Click += new System.EventHandler(this.lblAgendar_Click);
@@ -85,10 +85,10 @@ namespace LaboratorioSystem
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(50, 26);
+            this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.Location = new System.Drawing.Point(28, 27);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(217, 20);
+            this.lblAdministrador.Size = new System.Drawing.Size(244, 20);
             this.lblAdministrador.TabIndex = 6;
             this.lblAdministrador.Text = "Administrador (Funcionario)";
             this.lblAdministrador.Click += new System.EventHandler(this.lblAdministrador_Click);
@@ -103,22 +103,44 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.btnLogar);
             this.panel1.Controls.Add(this.lblAdministrador);
-            this.panel1.Location = new System.Drawing.Point(124, 292);
+            this.panel1.Location = new System.Drawing.Point(122, 292);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(309, 197);
             this.panel1.TabIndex = 7;
             // 
-            // panel2
+            // txtSenha
             // 
-            this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btnAgendar);
-            this.panel2.Controls.Add(this.lblAgendar);
-            this.panel2.Location = new System.Drawing.Point(483, 292);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(155, 197);
-            this.panel2.TabIndex = 8;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.txtSenha.Location = new System.Drawing.Point(82, 109);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(179, 20);
+            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(80, 68);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(179, 20);
+            this.txtEmail.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(42, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Senha:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(43, 71);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.TabIndex = 6;
+            this.lblEmail.Text = "Email:";
             // 
             // btnLogar
             // 
@@ -132,39 +154,17 @@ namespace LaboratorioSystem
             this.btnLogar.UseVisualStyleBackColor = false;
             this.btnLogar.Click += new System.EventHandler(this.btnLogar_Click);
             // 
-            // lblEmail
+            // panel2
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(48, 71);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(35, 13);
-            this.lblEmail.TabIndex = 6;
-            this.lblEmail.Text = "Email:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Senha:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(83, 68);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(179, 20);
-            this.txtEmail.TabIndex = 6;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(84, 109);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(179, 20);
-            this.txtSenha.TabIndex = 9;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            this.panel2.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btnAgendar);
+            this.panel2.Controls.Add(this.lblAgendar);
+            this.panel2.Location = new System.Drawing.Point(483, 292);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(155, 197);
+            this.panel2.TabIndex = 8;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox2
             // 

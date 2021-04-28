@@ -55,14 +55,14 @@ namespace LaboratorioSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtSenha);
             this.panel2.Controls.Add(this.txtEmail);
-            this.panel2.Location = new System.Drawing.Point(644, 105);
+            this.panel2.Location = new System.Drawing.Point(735, 103);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(471, 169);
+            this.panel2.Size = new System.Drawing.Size(270, 169);
             this.panel2.TabIndex = 11;
             // 
             // btnAlterar
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(111, 131);
+            this.btnAlterar.Location = new System.Drawing.Point(85, 131);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(116, 22);
             this.btnAlterar.TabIndex = 5;
@@ -73,7 +73,7 @@ namespace LaboratorioSystem
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.ForeColor = System.Drawing.Color.Maroon;
-            this.lblSenha.Location = new System.Drawing.Point(41, 101);
+            this.lblSenha.Location = new System.Drawing.Point(32, 101);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(39, 13);
             this.lblSenha.TabIndex = 4;
@@ -83,7 +83,7 @@ namespace LaboratorioSystem
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Maroon;
-            this.lblEmail.Location = new System.Drawing.Point(44, 63);
+            this.lblEmail.Location = new System.Drawing.Point(36, 63);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(34, 13);
             this.lblEmail.TabIndex = 3;
@@ -92,25 +92,26 @@ namespace LaboratorioSystem
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(76, 24);
+            this.label2.Location = new System.Drawing.Point(27, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 13);
+            this.label2.Size = new System.Drawing.Size(209, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Alterar senha e email administrador:";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(80, 98);
+            this.txtSenha.Location = new System.Drawing.Point(75, 98);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(175, 20);
+            this.txtSenha.Size = new System.Drawing.Size(158, 20);
             this.txtSenha.TabIndex = 1;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(80, 60);
+            this.txtEmail.Location = new System.Drawing.Point(74, 60);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(177, 20);
+            this.txtEmail.Size = new System.Drawing.Size(159, 20);
             this.txtEmail.TabIndex = 0;
             // 
             // lblAdministrador
@@ -128,7 +129,7 @@ namespace LaboratorioSystem
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(103, 72);
+            this.label1.Location = new System.Drawing.Point(85, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 9;
@@ -136,7 +137,7 @@ namespace LaboratorioSystem
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(485, 69);
+            this.btnPesquisar.Location = new System.Drawing.Point(467, 69);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(89, 20);
             this.btnPesquisar.TabIndex = 8;
@@ -145,7 +146,7 @@ namespace LaboratorioSystem
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(211, 69);
+            this.txtPesquisar.Location = new System.Drawing.Point(193, 69);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(263, 20);
             this.txtPesquisar.TabIndex = 7;

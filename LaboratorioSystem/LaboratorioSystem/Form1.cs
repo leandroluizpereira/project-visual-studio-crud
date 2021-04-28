@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using MySql.Data.MySqlClient;
 
 namespace LaboratorioSystem
 {
     public partial class Form1 : Form
     {
+        Thread nt;
         public Form1()
         {
             InitializeComponent();
@@ -74,7 +77,15 @@ namespace LaboratorioSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
+            nt = new Thread(novoForm2);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
 
+        private void novoForm2()
+        {
+            Application.Run(new Form2());
         }
 
         private void lblAgendar_Click(object sender, EventArgs e)
@@ -89,7 +100,15 @@ namespace LaboratorioSystem
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
+            this.Close();
+            nt = new Thread(novoForm);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
 
+        private void novoForm()
+        {
+            Application.Run(new Form3());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

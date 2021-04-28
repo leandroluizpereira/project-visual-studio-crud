@@ -10,3 +10,9 @@ C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\La
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.pdb
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form2.resources
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.Form3.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\Ubiety.Dns.Core.dll
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\Zstandard.Net.dll
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\System.Buffers.dll
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.csproj.CopyComplete
