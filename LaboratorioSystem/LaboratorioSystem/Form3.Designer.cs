@@ -171,12 +171,14 @@ namespace LaboratorioSystem
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(865, 22);
+            this.btnVoltar.BackColor = System.Drawing.Color.Green;
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnVoltar.Location = new System.Drawing.Point(1053, 21);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(140, 40);
+            this.btnVoltar.Size = new System.Drawing.Size(109, 36);
             this.btnVoltar.TabIndex = 13;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Form3

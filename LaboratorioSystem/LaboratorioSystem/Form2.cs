@@ -44,9 +44,33 @@ namespace LaboratorioSystem
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+      
+            String pagamento = radioCartao.Text;
+            if (radioCartao.Checked == true)
+            {
+                pagamento = radioCartao.Text;
+            }
+            else
+            {
+                pagamento = radioDinheiro.Text;
+            }
+
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
-            String sql = "insert into tbpaciente(nome) values('" + txtNome.Text + "')";
+            String sql = "insert into tbpaciente(nome,email,celular,rua,numero,bairro,cpf,unidades,exames,data,pagamento) " +
+                "values(@nome,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@pagamento)";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
+            cmm.Parameters.AddWithValue("@nome",txtNome.Text);
+            cmm.Parameters.AddWithValue("@email", txtEmail.Text);
+            cmm.Parameters.AddWithValue("@celular", txtCelular.Text);
+            cmm.Parameters.AddWithValue("@rua", txtRua.Text);
+            cmm.Parameters.AddWithValue("@numero", txtNumero.Text);
+            cmm.Parameters.AddWithValue("@bairro", txtBairro.Text);
+            cmm.Parameters.AddWithValue("@cpf", txtCpf.Text);
+            cmm.Parameters.AddWithValue("@unidades", comboUnidades.Text);
+            cmm.Parameters.AddWithValue("@exames", checkedListBoxExame.Text);
+            cmm.Parameters.AddWithValue("@data", dataGridView.Text);
+            cmm.Parameters.AddWithValue("@pagamento",pagamento);
+
             conn.Open();
             cmm.ExecuteNonQuery();
             cmm.Dispose();
@@ -58,6 +82,13 @@ namespace LaboratorioSystem
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+           /// MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
+           // String sql = "insert into tbpaciente(nome) values('" + txtNome.Text + ")";
+           // MySqlCommand cmm = new MySqlCommand(sql, conn);
+           // conn.Open();
+           // cmm.ExecuteNonQuery();
+           // cmm.Dispose();
+           // conn.Close();
 
         }
 
@@ -79,8 +110,20 @@ namespace LaboratorioSystem
             Application.Run(new Form1());
         }
 
+        private void checkedListBoxExame_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+            lblValor.Text = "2000";
+           int valor = Convert.ToInt32(lblValor.Text);
+         
+           if (checkedListBoxExame.CheckedItems.Equals("Ultrassonografia"))
+          {
+                lblValor.Text = "200";
+          }
 
-    }
+
+        }
+   }
 
 
 

@@ -63,7 +63,7 @@ namespace LaboratorioSystem
             // 
             this.lblAgendar.AutoSize = true;
             this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgendar.Location = new System.Drawing.Point(41, 60);
+            this.lblAgendar.Location = new System.Drawing.Point(39, 54);
             this.lblAgendar.Name = "lblAgendar";
             this.lblAgendar.Size = new System.Drawing.Size(73, 18);
             this.lblAgendar.TabIndex = 4;
@@ -74,9 +74,9 @@ namespace LaboratorioSystem
             // 
             this.btnAgendar.BackColor = System.Drawing.Color.Green;
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(31, 105);
+            this.btnAgendar.Location = new System.Drawing.Point(31, 104);
             this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(95, 32);
+            this.btnAgendar.Size = new System.Drawing.Size(95, 29);
             this.btnAgendar.TabIndex = 5;
             this.btnAgendar.Text = "Agendamento";
             this.btnAgendar.UseVisualStyleBackColor = false;
@@ -86,7 +86,7 @@ namespace LaboratorioSystem
             // 
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(28, 27);
+            this.lblAdministrador.Location = new System.Drawing.Point(23, 23);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(244, 20);
             this.lblAdministrador.TabIndex = 6;
@@ -103,30 +103,30 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.lblEmail);
             this.panel1.Controls.Add(this.btnLogar);
             this.panel1.Controls.Add(this.lblAdministrador);
-            this.panel1.Location = new System.Drawing.Point(122, 292);
+            this.panel1.Location = new System.Drawing.Point(129, 319);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(309, 197);
+            this.panel1.Size = new System.Drawing.Size(293, 145);
             this.panel1.TabIndex = 7;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(82, 109);
+            this.txtSenha.Location = new System.Drawing.Point(65, 95);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(179, 20);
+            this.txtSenha.Size = new System.Drawing.Size(138, 20);
             this.txtSenha.TabIndex = 9;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(80, 68);
+            this.txtEmail.Location = new System.Drawing.Point(63, 63);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(179, 20);
+            this.txtEmail.Size = new System.Drawing.Size(140, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 112);
+            this.label3.Location = new System.Drawing.Point(22, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 6;
@@ -136,7 +136,7 @@ namespace LaboratorioSystem
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(43, 71);
+            this.lblEmail.Location = new System.Drawing.Point(28, 66);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 6;
@@ -146,9 +146,9 @@ namespace LaboratorioSystem
             // 
             this.btnLogar.BackColor = System.Drawing.Color.Green;
             this.btnLogar.ForeColor = System.Drawing.Color.White;
-            this.btnLogar.Location = new System.Drawing.Point(96, 144);
+            this.btnLogar.Location = new System.Drawing.Point(216, 70);
             this.btnLogar.Name = "btnLogar";
-            this.btnLogar.Size = new System.Drawing.Size(118, 32);
+            this.btnLogar.Size = new System.Drawing.Size(60, 29);
             this.btnLogar.TabIndex = 6;
             this.btnLogar.Text = "Logar";
             this.btnLogar.UseVisualStyleBackColor = false;

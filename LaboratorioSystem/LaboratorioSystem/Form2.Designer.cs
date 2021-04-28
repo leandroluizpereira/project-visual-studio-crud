@@ -34,10 +34,10 @@ namespace LaboratorioSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioDinheiro = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.radioCartao = new System.Windows.Forms.RadioButton();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.comboUnidades = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@ namespace LaboratorioSystem
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxExame = new System.Windows.Forms.CheckedListBox();
             this.lblRua = new System.Windows.Forms.Label();
             this.lblExame = new System.Windows.Forms.Label();
             this.txtRua = new System.Windows.Forms.TextBox();
@@ -64,7 +64,7 @@ namespace LaboratorioSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,10 +98,10 @@ namespace LaboratorioSystem
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioDinheiro);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.radioCartao);
+            this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.comboUnidades);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -116,7 +116,7 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.txtNome);
             this.panel1.Controls.Add(this.txtCpf);
             this.panel1.Controls.Add(this.lblCpf);
-            this.panel1.Controls.Add(this.checkedListBox1);
+            this.panel1.Controls.Add(this.checkedListBoxExame);
             this.panel1.Controls.Add(this.lblRua);
             this.panel1.Controls.Add(this.lblExame);
             this.panel1.Controls.Add(this.txtRua);
@@ -152,43 +152,42 @@ namespace LaboratorioSystem
             this.label6.TabIndex = 29;
             this.label6.Text = "Data:";
             // 
-            // radioButton2
+            // radioDinheiro
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(166, 269);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(64, 17);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Dinheiro";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioDinheiro.AutoSize = true;
+            this.radioDinheiro.Location = new System.Drawing.Point(166, 269);
+            this.radioDinheiro.Name = "radioDinheiro";
+            this.radioDinheiro.Size = new System.Drawing.Size(64, 17);
+            this.radioDinheiro.TabIndex = 28;
+            this.radioDinheiro.Text = "Dinheiro";
+            this.radioDinheiro.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Location = new System.Drawing.Point(457, 17);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 326);
+            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
-            // radioButton1
+            // radioCartao
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(60, 269);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(105, 17);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "cartão de crédito";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioCartao.AutoSize = true;
+            this.radioCartao.Location = new System.Drawing.Point(60, 269);
+            this.radioCartao.Name = "radioCartao";
+            this.radioCartao.Size = new System.Drawing.Size(105, 17);
+            this.radioCartao.TabIndex = 26;
+            this.radioCartao.TabStop = true;
+            this.radioCartao.Text = "cartão de crédito";
+            this.radioCartao.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.Location = new System.Drawing.Point(71, 172);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(140, 62);
-            this.dataGridView1.TabIndex = 31;
+            this.dataGridView.Location = new System.Drawing.Point(64, 172);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(157, 42);
+            this.dataGridView.TabIndex = 31;
             // 
             // comboUnidades
             // 
@@ -232,7 +231,7 @@ namespace LaboratorioSystem
             this.txtCelular.BackColor = System.Drawing.Color.White;
             this.txtCelular.Location = new System.Drawing.Point(60, 53);
             this.txtCelular.Name = "txtCelular";
-            this.txtCelular.Size = new System.Drawing.Size(123, 20);
+            this.txtCelular.Size = new System.Drawing.Size(126, 20);
             this.txtCelular.TabIndex = 23;
             // 
             // lblCelular
@@ -274,19 +273,19 @@ namespace LaboratorioSystem
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(220, 245);
+            this.lblValor.Location = new System.Drawing.Point(216, 243);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(30, 13);
+            this.lblValor.Size = new System.Drawing.Size(13, 13);
             this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "valor";
+            this.lblValor.Text = "0";
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.Green;
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(282, 221);
+            this.btnSalvar.Location = new System.Drawing.Point(282, 231);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(124, 37);
+            this.btnSalvar.Size = new System.Drawing.Size(124, 30);
             this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "Agendar ";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -295,7 +294,7 @@ namespace LaboratorioSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 245);
+            this.label3.Location = new System.Drawing.Point(43, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 13);
             this.label3.TabIndex = 15;
@@ -327,18 +326,19 @@ namespace LaboratorioSystem
             this.lblCpf.TabIndex = 17;
             this.lblCpf.Text = "Cpf:";
             // 
-            // checkedListBox1
+            // checkedListBoxExame
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.checkedListBoxExame.FormattingEnabled = true;
+            this.checkedListBoxExame.Items.AddRange(new object[] {
             "Eletrocardiograma",
             "Ultrassonografia ",
             "Anaçises Clinica",
             "Teste do Covid"});
-            this.checkedListBox1.Location = new System.Drawing.Point(287, 127);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(117, 64);
-            this.checkedListBox1.TabIndex = 14;
+            this.checkedListBoxExame.Location = new System.Drawing.Point(287, 127);
+            this.checkedListBoxExame.Name = "checkedListBoxExame";
+            this.checkedListBoxExame.Size = new System.Drawing.Size(117, 64);
+            this.checkedListBoxExame.TabIndex = 14;
+            this.checkedListBoxExame.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxExame_SelectedIndexChanged);
             // 
             // lblRua
             // 
@@ -409,7 +409,7 @@ namespace LaboratorioSystem
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(139, 127);
+            this.pictureBox1.Location = new System.Drawing.Point(139, 130);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 367);
             this.pictureBox1.TabIndex = 23;
@@ -431,7 +431,7 @@ namespace LaboratorioSystem
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -454,7 +454,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label lblCpf;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBoxExame;
         private System.Windows.Forms.Label lblRua;
         private System.Windows.Forms.Label lblExame;
         private System.Windows.Forms.TextBox txtRua;
@@ -466,11 +466,11 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboUnidades;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RadioButton radioCartao;
+        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioDinheiro;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnVoltar;
     }
