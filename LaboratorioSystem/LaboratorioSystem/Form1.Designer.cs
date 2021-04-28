@@ -63,18 +63,18 @@ namespace LaboratorioSystem
             // 
             this.lblAgendar.AutoSize = true;
             this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgendar.Location = new System.Drawing.Point(39, 54);
+            this.lblAgendar.Location = new System.Drawing.Point(39, 58);
             this.lblAgendar.Name = "lblAgendar";
-            this.lblAgendar.Size = new System.Drawing.Size(73, 18);
+            this.lblAgendar.Size = new System.Drawing.Size(82, 18);
             this.lblAgendar.TabIndex = 4;
-            this.lblAgendar.Text = "Paciente";
+            this.lblAgendar.Text = "Cadastro ";
             this.lblAgendar.Click += new System.EventHandler(this.lblAgendar_Click);
             // 
             // btnAgendar
             // 
             this.btnAgendar.BackColor = System.Drawing.Color.Green;
             this.btnAgendar.ForeColor = System.Drawing.Color.White;
-            this.btnAgendar.Location = new System.Drawing.Point(31, 104);
+            this.btnAgendar.Location = new System.Drawing.Point(33, 95);
             this.btnAgendar.Name = "btnAgendar";
             this.btnAgendar.Size = new System.Drawing.Size(95, 29);
             this.btnAgendar.TabIndex = 5;
@@ -86,11 +86,11 @@ namespace LaboratorioSystem
             // 
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(23, 23);
+            this.lblAdministrador.Location = new System.Drawing.Point(39, 26);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(244, 20);
+            this.lblAdministrador.Size = new System.Drawing.Size(211, 20);
             this.lblAdministrador.TabIndex = 6;
-            this.lblAdministrador.Text = "Administrador (Funcionario)";
+            this.lblAdministrador.Text = "Acessar (Agendamento)";
             this.lblAdministrador.Click += new System.EventHandler(this.lblAdministrador_Click);
             // 
             // panel1
@@ -160,9 +160,9 @@ namespace LaboratorioSystem
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAgendar);
             this.panel2.Controls.Add(this.lblAgendar);
-            this.panel2.Location = new System.Drawing.Point(483, 292);
+            this.panel2.Location = new System.Drawing.Point(476, 292);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(155, 197);
+            this.panel2.Size = new System.Drawing.Size(162, 197);
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -170,7 +170,7 @@ namespace LaboratorioSystem
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.NavajoWhite;
             this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.paciente;
-            this.pictureBox2.Location = new System.Drawing.Point(637, 292);
+            this.pictureBox2.Location = new System.Drawing.Point(637, 293);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(419, 195);
             this.pictureBox2.TabIndex = 10;

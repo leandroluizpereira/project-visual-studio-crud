@@ -56,10 +56,11 @@ namespace LaboratorioSystem
             }
 
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
-            String sql = "insert into tbpaciente(nome,email,celular,rua,numero,bairro,cpf,unidades,exames,data,pagamento) " +
-                "values(@nome,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@pagamento)";
+            String sql = "insert into tbpaciente(nome,senha,email,celular,rua,numero,bairro,cpf,unidades,exames,data,pagamento) " +
+                "values(@nome,@senha,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@pagamento)";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
             cmm.Parameters.AddWithValue("@nome",txtNome.Text);
+            cmm.Parameters.AddWithValue("@senha", txtSenha.Text);
             cmm.Parameters.AddWithValue("@email", txtEmail.Text);
             cmm.Parameters.AddWithValue("@celular", txtCelular.Text);
             cmm.Parameters.AddWithValue("@rua", txtRua.Text);

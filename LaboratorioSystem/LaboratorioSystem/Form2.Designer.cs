@@ -62,6 +62,8 @@ namespace LaboratorioSystem
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -85,7 +87,7 @@ namespace LaboratorioSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(557, 83);
+            this.label1.Location = new System.Drawing.Point(550, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 13);
             this.label1.TabIndex = 3;
@@ -96,6 +98,8 @@ namespace LaboratorioSystem
             // 
             this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtSenha);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.radioDinheiro);
@@ -146,7 +150,7 @@ namespace LaboratorioSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 172);
+            this.label6.Location = new System.Drawing.Point(20, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 29;
@@ -178,15 +182,14 @@ namespace LaboratorioSystem
             this.radioCartao.Name = "radioCartao";
             this.radioCartao.Size = new System.Drawing.Size(105, 17);
             this.radioCartao.TabIndex = 26;
-            this.radioCartao.TabStop = true;
             this.radioCartao.Text = "cartão de crédito";
             this.radioCartao.UseVisualStyleBackColor = true;
             // 
             // dataGridView
             // 
-            this.dataGridView.Location = new System.Drawing.Point(64, 172);
+            this.dataGridView.Location = new System.Drawing.Point(60, 168);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(157, 42);
+            this.dataGridView.Size = new System.Drawing.Size(162, 27);
             this.dataGridView.TabIndex = 31;
             // 
             // comboUnidades
@@ -415,6 +418,22 @@ namespace LaboratorioSystem
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 214);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Senha:";
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(61, 212);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(135, 20);
+            this.txtSenha.TabIndex = 34;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,5 +492,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.RadioButton radioDinheiro;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label label8;
     }
 }
