@@ -100,10 +100,39 @@ namespace LaboratorioSystem
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            nt = new Thread(novoForm);
-            nt.SetApartmentState(ApartmentState.STA);
-            nt.Start();
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbpaciente");
+            //Selecionando a tabela fucionario
+            String sql = "select * from tbFuncionario ";
+            MySqlCommand cmm = new MySqlCommand(sql, conn);
+            conn.Open();
+            MySqlDataReader dr = cmm.ExecuteReader();
+            if (dr.Read())
+            {
+                if (txtEmail.Text == dr["email"].ToString() && txtSenha.Text == dr["senha"].ToString())
+                {
+              
+                    this.Close();
+                    nt = new Thread(novoForm);
+                    nt.SetApartmentState(ApartmentState.STA);
+                    nt.Start();
+                }
+                else
+                {
+                    MessageBox.Show("Senha invalido!");
+                }
+            }
+          
+            cmm.Dispose();
+            conn.Close();
+        
+
+
+
+
+
+
+         
         }
 
         private void novoForm()

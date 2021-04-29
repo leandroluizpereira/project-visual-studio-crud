@@ -32,6 +32,8 @@ namespace LaboratorioSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.radioDinheiro = new System.Windows.Forms.RadioButton();
@@ -46,9 +48,7 @@ namespace LaboratorioSystem
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblValor = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
@@ -62,8 +62,8 @@ namespace LaboratorioSystem
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -129,11 +129,27 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.txtNumero);
             this.panel1.Controls.Add(this.txtBairro);
             this.panel1.Controls.Add(this.lblBairro);
-            this.panel1.Location = new System.Drawing.Point(358, 130);
+            this.panel1.Location = new System.Drawing.Point(359, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(652, 367);
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(61, 212);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(135, 20);
+            this.txtSenha.TabIndex = 34;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 214);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Senha:";
             // 
             // btnVoltar
             // 
@@ -273,15 +289,6 @@ namespace LaboratorioSystem
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(216, 243);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(13, 13);
-            this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "0";
-            // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.Green;
@@ -293,16 +300,6 @@ namespace LaboratorioSystem
             this.btnSalvar.Text = "Agendar ";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 242);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Valor a ser pago no dia do exame :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNome
             // 
@@ -418,21 +415,24 @@ namespace LaboratorioSystem
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // label8
+            // lblValor
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 214);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 13);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Senha:";
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(216, 250);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(13, 13);
+            this.lblValor.TabIndex = 16;
+            this.lblValor.Text = "0";
             // 
-            // txtSenha
+            // label3
             // 
-            this.txtSenha.Location = new System.Drawing.Point(61, 212);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(135, 20);
-            this.txtSenha.TabIndex = 34;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(171, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Valor a ser pago no dia do exame :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form2
             // 
@@ -467,9 +467,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label lblCpf;
@@ -494,5 +492,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -62,12 +62,12 @@ namespace LaboratorioSystem
             // lblAgendar
             // 
             this.lblAgendar.AutoSize = true;
-            this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgendar.Location = new System.Drawing.Point(39, 58);
+            this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgendar.Location = new System.Drawing.Point(9, 56);
             this.lblAgendar.Name = "lblAgendar";
-            this.lblAgendar.Size = new System.Drawing.Size(82, 18);
+            this.lblAgendar.Size = new System.Drawing.Size(145, 16);
             this.lblAgendar.TabIndex = 4;
-            this.lblAgendar.Text = "Cadastro ";
+            this.lblAgendar.Text = "Cadastro (paciente)";
             this.lblAgendar.Click += new System.EventHandler(this.lblAgendar_Click);
             // 
             // btnAgendar
@@ -86,11 +86,11 @@ namespace LaboratorioSystem
             // 
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(39, 26);
+            this.lblAdministrador.Location = new System.Drawing.Point(22, 26);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(211, 20);
+            this.lblAdministrador.Size = new System.Drawing.Size(244, 20);
             this.lblAdministrador.TabIndex = 6;
-            this.lblAdministrador.Text = "Acessar (Agendamento)";
+            this.lblAdministrador.Text = "Administrador (Funcionario)";
             this.lblAdministrador.Click += new System.EventHandler(this.lblAdministrador_Click);
             // 
             // panel1
@@ -146,7 +146,7 @@ namespace LaboratorioSystem
             // 
             this.btnLogar.BackColor = System.Drawing.Color.Green;
             this.btnLogar.ForeColor = System.Drawing.Color.White;
-            this.btnLogar.Location = new System.Drawing.Point(216, 70);
+            this.btnLogar.Location = new System.Drawing.Point(214, 74);
             this.btnLogar.Name = "btnLogar";
             this.btnLogar.Size = new System.Drawing.Size(60, 29);
             this.btnLogar.TabIndex = 6;

@@ -59,26 +59,51 @@ namespace LaboratorioSystem
             String sql = "insert into tbpaciente(nome,senha,email,celular,rua,numero,bairro,cpf,unidades,exames,data,pagamento) " +
                 "values(@nome,@senha,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@pagamento)";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
-            cmm.Parameters.AddWithValue("@nome",txtNome.Text);
-            cmm.Parameters.AddWithValue("@senha", txtSenha.Text);
-            cmm.Parameters.AddWithValue("@email", txtEmail.Text);
-            cmm.Parameters.AddWithValue("@celular", txtCelular.Text);
-            cmm.Parameters.AddWithValue("@rua", txtRua.Text);
-            cmm.Parameters.AddWithValue("@numero", txtNumero.Text);
-            cmm.Parameters.AddWithValue("@bairro", txtBairro.Text);
-            cmm.Parameters.AddWithValue("@cpf", txtCpf.Text);
-            cmm.Parameters.AddWithValue("@unidades", comboUnidades.Text);
-            cmm.Parameters.AddWithValue("@exames", checkedListBoxExame.Text);
-            cmm.Parameters.AddWithValue("@data", dataGridView.Text);
-            cmm.Parameters.AddWithValue("@pagamento",pagamento);
 
-            conn.Open();
-            cmm.ExecuteNonQuery();
-            cmm.Dispose();
-            conn.Close();
+            if (txtNome.Text != "" && txtSenha.Text != "" && txtEmail.Text != ""
+                && txtCelular.Text != "" && txtRua.Text != "" && txtNumero.Text != ""
+                && txtBairro.Text != "" && txtCpf.Text != "" && comboUnidades.Text != "" && checkedListBoxExame.Text != "")
+            {
+                cmm.Parameters.AddWithValue("@nome", txtNome.Text);
+                cmm.Parameters.AddWithValue("@senha", txtSenha.Text);
+                cmm.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmm.Parameters.AddWithValue("@celular", txtCelular.Text);
+                cmm.Parameters.AddWithValue("@rua", txtRua.Text);
+                cmm.Parameters.AddWithValue("@numero", txtNumero.Text);
+                cmm.Parameters.AddWithValue("@bairro", txtBairro.Text);
+                cmm.Parameters.AddWithValue("@cpf", txtCpf.Text);
+                cmm.Parameters.AddWithValue("@unidades", comboUnidades.Text);
+                cmm.Parameters.AddWithValue("@exames", checkedListBoxExame.Text);
+                cmm.Parameters.AddWithValue("@data", dataGridView.Text);
+                cmm.Parameters.AddWithValue("@pagamento", pagamento);
 
+                conn.Open();
+                cmm.ExecuteNonQuery();
+                cmm.Dispose();
+                conn.Close();
 
+                MessageBox.Show("Agendando com sucesso!");
 
+                this.Close();
+                nt = new Thread(novoForm1);
+                nt.SetApartmentState(ApartmentState.STA);
+                nt.Start();
+            }
+            else
+            {
+                MessageBox.Show("Os dados devem ser preenchido!");
+                this.Close();
+                nt = new Thread(novoForm2);
+                nt.SetApartmentState(ApartmentState.STA);
+                nt.Start();
+              
+            }
+        
+
+        }
+        private void novoForm2()
+        {
+            Application.Run(new Form2());
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -113,15 +138,7 @@ namespace LaboratorioSystem
 
         private void checkedListBoxExame_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
-            lblValor.Text = "2000";
-           int valor = Convert.ToInt32(lblValor.Text);
-         
-           if (checkedListBoxExame.CheckedItems.Equals("Ultrassonografia"))
-          {
-                lblValor.Text = "200";
-          }
-
+        
 
         }
    }
