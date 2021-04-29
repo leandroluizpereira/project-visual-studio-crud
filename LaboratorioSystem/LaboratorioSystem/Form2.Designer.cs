@@ -66,6 +66,8 @@ namespace LaboratorioSystem
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.comboHorario = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,6 +103,8 @@ namespace LaboratorioSystem
             // 
             this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboHorario);
+            this.panel1.Controls.Add(this.lblHora);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.btnVoltar);
@@ -197,9 +201,9 @@ namespace LaboratorioSystem
             // 
             // dataGridView
             // 
-            this.dataGridView.Location = new System.Drawing.Point(60, 168);
+            this.dataGridView.Location = new System.Drawing.Point(60, 171);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(162, 27);
+            this.dataGridView.Size = new System.Drawing.Size(105, 27);
             this.dataGridView.TabIndex = 31;
             // 
             // comboUnidades
@@ -232,11 +236,11 @@ namespace LaboratorioSystem
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(87, 319);
+            this.label4.Location = new System.Drawing.Point(82, 319);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(342, 13);
+            this.label4.Size = new System.Drawing.Size(351, 13);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Depois de cadastrar entraremos em contato para marcar o dia e horário";
+            this.label4.Text = "O paciente que não vir no horario marcado sera remarcado na recepção.";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCelular
@@ -453,11 +457,40 @@ namespace LaboratorioSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(45, 35);
+            this.label7.Location = new System.Drawing.Point(57, 32);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 12);
+            this.label7.Size = new System.Drawing.Size(135, 12);
             this.label7.TabIndex = 25;
-            this.label7.Text = "os cuidados com  continuam em vigor";
+            this.label7.Text = "E obrigatorio o uso de mascara .";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Location = new System.Drawing.Point(170, 178);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(44, 13);
+            this.lblHora.TabIndex = 35;
+            this.lblHora.Text = "Horario:";
+            // 
+            // comboHorario
+            // 
+            this.comboHorario.FormattingEnabled = true;
+            this.comboHorario.Items.AddRange(new object[] {
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00"});
+            this.comboHorario.Location = new System.Drawing.Point(216, 175);
+            this.comboHorario.Name = "comboHorario";
+            this.comboHorario.Size = new System.Drawing.Size(50, 21);
+            this.comboHorario.TabIndex = 36;
             // 
             // Form2
             // 
@@ -523,5 +556,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboHorario;
+        private System.Windows.Forms.Label lblHora;
     }
 }

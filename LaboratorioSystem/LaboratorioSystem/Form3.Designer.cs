@@ -71,6 +71,8 @@ namespace LaboratorioSystem
             this.lblInformacao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblora = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -184,6 +186,8 @@ namespace LaboratorioSystem
             // 
             this.panel3.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.lblHora);
+            this.panel3.Controls.Add(this.lblora);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.lblPagamento);
             this.panel3.Controls.Add(this.lblNum);
@@ -503,6 +507,24 @@ namespace LaboratorioSystem
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
+            // lblora
+            // 
+            this.lblora.AutoSize = true;
+            this.lblora.Location = new System.Drawing.Point(140, 172);
+            this.lblora.Name = "lblora";
+            this.lblora.Size = new System.Drawing.Size(44, 13);
+            this.lblora.TabIndex = 42;
+            this.lblora.Text = "Horario:";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Location = new System.Drawing.Point(183, 172);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(70, 13);
+            this.lblHora.TabIndex = 43;
+            this.lblHora.Text = "---------------------";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,5 +596,7 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Label lblPagamento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblInformacao;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label lblora;
     }
 }

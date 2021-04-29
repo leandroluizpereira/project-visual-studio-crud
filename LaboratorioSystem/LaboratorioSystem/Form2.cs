@@ -56,13 +56,13 @@ namespace LaboratorioSystem
             }
 
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
-            String sql = "insert into tbpaciente(nome,senha,email,celular,rua,numero,bairro,cpf,unidades,exames,data,pagamento) " +
-                "values(@nome,@senha,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@pagamento)";
+            String sql = "insert into tbpaciente(nome,senha,email,celular,rua,numero,bairro,cpf,unidades,exames,data,horario,pagamento) " +
+                "values(@nome,@senha,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@horario,@pagamento)";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
 
             if (txtNome.Text != "" && txtSenha.Text != "" && txtEmail.Text != ""
                 && txtCelular.Text != "" && txtRua.Text != "" && txtNumero.Text != ""
-                && txtBairro.Text != "" && txtCpf.Text != "" && comboUnidades.Text != "" && checkedListBoxExame.Text != "")
+                && txtBairro.Text != "" && txtCpf.Text != "" && comboUnidades.Text != "" && checkedListBoxExame.Text != "" && comboHorario.Text != "")
             {
                 cmm.Parameters.AddWithValue("@nome", txtNome.Text);
                 cmm.Parameters.AddWithValue("@senha", txtSenha.Text);
@@ -75,6 +75,7 @@ namespace LaboratorioSystem
                 cmm.Parameters.AddWithValue("@unidades", comboUnidades.Text);
                 cmm.Parameters.AddWithValue("@exames", checkedListBoxExame.Text);
                 cmm.Parameters.AddWithValue("@data", dataGridView.Text);
+                cmm.Parameters.AddWithValue("@horario", comboHorario.Text);
                 cmm.Parameters.AddWithValue("@pagamento", pagamento);
 
                 conn.Open();
