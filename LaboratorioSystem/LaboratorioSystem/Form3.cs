@@ -61,6 +61,7 @@ namespace LaboratorioSystem
                 lblRua.Text = dr["rua"].ToString();
                 lblNum.Text = dr["numero"].ToString();
                 lblCpf.Text = dr["cpf"].ToString();
+                lblData.Text = dr["data"].ToString();
                 lblHora.Text = dr["horario"].ToString();
                 lblPagamento.Text = dr["pagamento"].ToString();
               //  lblExame.Text = dr["exame"].ToString();

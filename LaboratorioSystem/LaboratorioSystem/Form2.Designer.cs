@@ -38,7 +38,6 @@ namespace LaboratorioSystem
             this.label6 = new System.Windows.Forms.Label();
             this.radioDinheiro = new System.Windows.Forms.RadioButton();
             this.radioCartao = new System.Windows.Forms.RadioButton();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.comboUnidades = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,9 +46,7 @@ namespace LaboratorioSystem
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblValor = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
@@ -68,8 +65,10 @@ namespace LaboratorioSystem
             this.label7 = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.comboHorario = new System.Windows.Forms.ComboBox();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboData = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -103,6 +102,7 @@ namespace LaboratorioSystem
             // 
             this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.comboData);
             this.panel1.Controls.Add(this.comboHorario);
             this.panel1.Controls.Add(this.lblHora);
             this.panel1.Controls.Add(this.txtSenha);
@@ -112,7 +112,6 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.radioDinheiro);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.radioCartao);
-            this.panel1.Controls.Add(this.dataGridView);
             this.panel1.Controls.Add(this.comboUnidades);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -199,13 +198,6 @@ namespace LaboratorioSystem
             this.radioCartao.Text = "cartão de crédito";
             this.radioCartao.UseVisualStyleBackColor = true;
             // 
-            // dataGridView
-            // 
-            this.dataGridView.Location = new System.Drawing.Point(60, 171);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(105, 27);
-            this.dataGridView.TabIndex = 31;
-            // 
             // comboUnidades
             // 
             this.comboUnidades.FormattingEnabled = true;
@@ -226,7 +218,7 @@ namespace LaboratorioSystem
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(28, 318);
+            this.label5.Location = new System.Drawing.Point(23, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 25;
@@ -287,15 +279,6 @@ namespace LaboratorioSystem
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(216, 250);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(13, 13);
-            this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "0";
-            // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.Green;
@@ -307,16 +290,6 @@ namespace LaboratorioSystem
             this.btnSalvar.Text = "Agendar ";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Valor a ser pago no dia do exame :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNome
             // 
@@ -492,6 +465,42 @@ namespace LaboratorioSystem
             this.comboHorario.Size = new System.Drawing.Size(50, 21);
             this.comboHorario.TabIndex = 36;
             // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(219, 250);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(45, 13);
+            this.lblValor.TabIndex = 16;
+            this.lblValor.Text = "R$: 350";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Qualquer exame selecionado valor unico :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // comboData
+            // 
+            this.comboData.FormattingEnabled = true;
+            this.comboData.Items.AddRange(new object[] {
+            "10/05/2021",
+            "15/05/2021",
+            "18/05/2021",
+            "21/05/2021",
+            "25/05/2021",
+            "30/05/2021",
+            "13/06/2021",
+            "15/06/2021"});
+            this.comboData.Location = new System.Drawing.Point(59, 173);
+            this.comboData.Name = "comboData";
+            this.comboData.Size = new System.Drawing.Size(98, 21);
+            this.comboData.TabIndex = 37;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +516,6 @@ namespace LaboratorioSystem
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -544,7 +552,6 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboUnidades;
         private System.Windows.Forms.RadioButton radioCartao;
-        private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.RadioButton radioDinheiro;
@@ -552,11 +559,12 @@ namespace LaboratorioSystem
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblValor;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboHorario;
         private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label lblValor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboData;
     }
 }

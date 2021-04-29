@@ -63,6 +63,7 @@ namespace LaboratorioSystem
             // 
             this.lblAgendar.AutoSize = true;
             this.lblAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAgendar.ForeColor = System.Drawing.Color.Maroon;
             this.lblAgendar.Location = new System.Drawing.Point(9, 56);
             this.lblAgendar.Name = "lblAgendar";
             this.lblAgendar.Size = new System.Drawing.Size(145, 16);
@@ -86,6 +87,7 @@ namespace LaboratorioSystem
             // 
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.ForeColor = System.Drawing.Color.Maroon;
             this.lblAdministrador.Location = new System.Drawing.Point(22, 26);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(244, 20);
@@ -160,9 +162,9 @@ namespace LaboratorioSystem
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.btnAgendar);
             this.panel2.Controls.Add(this.lblAgendar);
-            this.panel2.Location = new System.Drawing.Point(476, 292);
+            this.panel2.Location = new System.Drawing.Point(476, 293);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(162, 197);
+            this.panel2.Size = new System.Drawing.Size(162, 195);
             this.panel2.TabIndex = 8;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 

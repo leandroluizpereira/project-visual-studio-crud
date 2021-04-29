@@ -20,7 +20,10 @@ namespace LaboratorioSystem
         public Form2()
         {
             InitializeComponent();
+
+
         }
+         
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -55,7 +58,8 @@ namespace LaboratorioSystem
                 pagamento = radioDinheiro.Text;
             }
 
-            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
+
+        MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
             String sql = "insert into tbpaciente(nome,senha,email,celular,rua,numero,bairro,cpf,unidades,exames,data,horario,pagamento) " +
                 "values(@nome,@senha,@email,@celular,@rua,@numero,@bairro,@cpf,@unidades,@exames,@data,@horario,@pagamento)";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
@@ -74,7 +78,7 @@ namespace LaboratorioSystem
                 cmm.Parameters.AddWithValue("@cpf", txtCpf.Text);
                 cmm.Parameters.AddWithValue("@unidades", comboUnidades.Text);
                 cmm.Parameters.AddWithValue("@exames", checkedListBoxExame.Text);
-                cmm.Parameters.AddWithValue("@data", dataGridView.Text);
+                cmm.Parameters.AddWithValue("@data", comboData.Text);
                 cmm.Parameters.AddWithValue("@horario", comboHorario.Text);
                 cmm.Parameters.AddWithValue("@pagamento", pagamento);
 

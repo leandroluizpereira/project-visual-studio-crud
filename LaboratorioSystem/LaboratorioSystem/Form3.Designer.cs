@@ -325,29 +325,29 @@ namespace LaboratorioSystem
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(216, 243);
+            this.lblValor.Location = new System.Drawing.Point(138, 243);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(13, 13);
+            this.lblValor.Size = new System.Drawing.Size(42, 13);
             this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "0";
+            this.lblValor.Text = "R$:350";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 242);
+            this.label3.Location = new System.Drawing.Point(54, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 13);
+            this.label3.Size = new System.Drawing.Size(83, 13);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Valor a ser pago no dia do exame :";
+            this.label3.Text = "Valor do exame:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(51, 20);
+            this.lblNome.Location = new System.Drawing.Point(44, 20);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(64, 13);
+            this.lblNome.Size = new System.Drawing.Size(112, 13);
             this.lblNome.TabIndex = 30;
-            this.lblNome.Text = "-------------------";
+            this.lblNome.Text = "-----------------------------------";
             // 
             // btnPesquisar
             // 
@@ -371,11 +371,11 @@ namespace LaboratorioSystem
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(54, 56);
+            this.lblCelular.Location = new System.Drawing.Point(47, 56);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(61, 13);
+            this.lblCelular.Size = new System.Drawing.Size(112, 13);
             this.lblCelular.TabIndex = 31;
-            this.lblCelular.Text = "------------------";
+            this.lblCelular.Text = "-----------------------------------";
             // 
             // label4
             // 
@@ -390,25 +390,25 @@ namespace LaboratorioSystem
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(52, 94);
+            this.lblBairro.Location = new System.Drawing.Point(43, 94);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(58, 13);
+            this.lblBairro.Size = new System.Drawing.Size(112, 13);
             this.lblBairro.TabIndex = 32;
-            this.lblBairro.Text = "-----------------";
+            this.lblBairro.Text = "-----------------------------------";
             // 
             // lblUnidades
             // 
             this.lblUnidades.AutoSize = true;
-            this.lblUnidades.Location = new System.Drawing.Point(62, 131);
+            this.lblUnidades.Location = new System.Drawing.Point(52, 131);
             this.lblUnidades.Name = "lblUnidades";
-            this.lblUnidades.Size = new System.Drawing.Size(46, 13);
+            this.lblUnidades.Size = new System.Drawing.Size(112, 13);
             this.lblUnidades.TabIndex = 33;
-            this.lblUnidades.Text = "-------------";
+            this.lblUnidades.Text = "-----------------------------------";
             // 
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(54, 172);
+            this.lblData.Location = new System.Drawing.Point(42, 172);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(46, 13);
             this.lblData.TabIndex = 34;
@@ -419,9 +419,9 @@ namespace LaboratorioSystem
             this.lblEmailuser.AutoSize = true;
             this.lblEmailuser.Location = new System.Drawing.Point(220, 20);
             this.lblEmailuser.Name = "lblEmailuser";
-            this.lblEmailuser.Size = new System.Drawing.Size(46, 13);
+            this.lblEmailuser.Size = new System.Drawing.Size(121, 13);
             this.lblEmailuser.TabIndex = 35;
-            this.lblEmailuser.Text = "-------------";
+            this.lblEmailuser.Text = "--------------------------------------";
             // 
             // lblRua
             // 
@@ -437,23 +437,23 @@ namespace LaboratorioSystem
             this.lblCpf.AutoSize = true;
             this.lblCpf.Location = new System.Drawing.Point(220, 94);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(97, 13);
+            this.lblCpf.Size = new System.Drawing.Size(130, 13);
             this.lblCpf.TabIndex = 37;
-            this.lblCpf.Text = "------------------------------";
+            this.lblCpf.Text = "-----------------------------------------";
             // 
             // lblExame
             // 
             this.lblExame.AutoSize = true;
             this.lblExame.Location = new System.Drawing.Point(235, 131);
             this.lblExame.Name = "lblExame";
-            this.lblExame.Size = new System.Drawing.Size(46, 13);
+            this.lblExame.Size = new System.Drawing.Size(112, 13);
             this.lblExame.TabIndex = 38;
-            this.lblExame.Text = "-------------";
+            this.lblExame.Text = "-----------------------------------";
             // 
             // lblNum
             // 
             this.lblNum.AutoSize = true;
-            this.lblNum.Location = new System.Drawing.Point(398, 56);
+            this.lblNum.Location = new System.Drawing.Point(391, 56);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(46, 13);
             this.lblNum.TabIndex = 39;
@@ -462,7 +462,7 @@ namespace LaboratorioSystem
             // lblPagamento
             // 
             this.lblPagamento.AutoSize = true;
-            this.lblPagamento.Location = new System.Drawing.Point(169, 275);
+            this.lblPagamento.Location = new System.Drawing.Point(162, 275);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(55, 13);
             this.lblPagamento.TabIndex = 40;
