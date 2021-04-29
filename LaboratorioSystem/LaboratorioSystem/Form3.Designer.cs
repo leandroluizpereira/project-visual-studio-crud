@@ -41,7 +41,6 @@ namespace LaboratorioSystem
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbln = new System.Windows.Forms.Label();
@@ -51,7 +50,6 @@ namespace LaboratorioSystem
             this.lblU = new System.Windows.Forms.Label();
             this.lblnumero = new System.Windows.Forms.Label();
             this.lblb = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lblValor = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,11 +69,13 @@ namespace LaboratorioSystem
             this.lblPagamento = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblInformacao = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -89,7 +89,7 @@ namespace LaboratorioSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.txtEmailAdministrador);
-            this.panel2.Location = new System.Drawing.Point(818, 103);
+            this.panel2.Location = new System.Drawing.Point(820, 327);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 180);
             this.panel2.TabIndex = 11;
@@ -224,15 +224,6 @@ namespace LaboratorioSystem
             this.label6.TabIndex = 29;
             this.label6.Text = "Data:";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
             // lblc
             // 
             this.lblc.AutoSize = true;
@@ -314,15 +305,6 @@ namespace LaboratorioSystem
             this.lblb.Size = new System.Drawing.Size(37, 13);
             this.lblb.TabIndex = 9;
             this.lblb.Text = "Bairro:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(780, 305);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(365, 213);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // btnVoltar
             // 
@@ -501,6 +483,26 @@ namespace LaboratorioSystem
             this.lblInformacao.TabIndex = 7;
             this.lblInformacao.Text = "----------------";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.pictureBox1.Image = global::LaboratorioSystem.Properties.Resources.paciente;
+            this.pictureBox1.Location = new System.Drawing.Point(746, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(413, 208);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,8 +523,8 @@ namespace LaboratorioSystem
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

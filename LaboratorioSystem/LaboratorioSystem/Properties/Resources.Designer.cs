@@ -63,6 +63,16 @@ namespace LaboratorioSystem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agendamento {
+            get {
+                object obj = ResourceManager.GetObject("agendamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laboratorio {
             get {
                 object obj = ResourceManager.GetObject("laboratorio", resourceCulture);
@@ -86,6 +96,16 @@ namespace LaboratorioSystem.Properties {
         internal static System.Drawing.Bitmap paciente {
             get {
                 object obj = ResourceManager.GetObject("paciente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paciente1 {
+            get {
+                object obj = ResourceManager.GetObject("paciente1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
