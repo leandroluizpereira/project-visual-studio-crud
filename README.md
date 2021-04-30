@@ -1,5 +1,5 @@
 # project-visual-studio-crud
- projeto 7° semestre : Sistema de labóratorio de agendamento .inicio 26/04/2021 finish conceito 29/04/2021
+ projeto 7° semestre : Sistema para labóratorio de agendamento 
 
 ## Projeto
 - [X] criar um sistema em C# conectado com o banco de dados mysql
@@ -15,6 +15,10 @@
  - [x] Painel
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
 - [x] Imagem sem liçensa
+- [x] inicio 26/04/2021
+- [x]  finish conceito 29/04/2021
+
+
 
 # Tela Principal
 
