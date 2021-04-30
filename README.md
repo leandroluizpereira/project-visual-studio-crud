@@ -22,8 +22,8 @@
 
 # Tela Agendamento
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/agendamento.png)
+![imagem]()
 
 # Tela Administrador
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/administrador.png)
+![imagem]()
