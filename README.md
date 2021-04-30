@@ -20,14 +20,14 @@
 
 
 
-# Tela Principal
+# Tela de Principal
 
 ![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/principal.png)
 
-# Tela Agendamento
+# Tela de Agendamento
 
 ![imagem]()
 
-# Tela Administrador
+# Tela de Administrador
 
 ![imagem]()
