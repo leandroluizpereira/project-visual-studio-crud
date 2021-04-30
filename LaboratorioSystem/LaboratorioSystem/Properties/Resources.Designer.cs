@@ -63,9 +63,29 @@ namespace LaboratorioSystem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administrador {
+            get {
+                object obj = ResourceManager.GetObject("administrador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap agendamento {
             get {
                 object obj = ResourceManager.GetObject("agendamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap caucasian_coat_doctor_employees_female_health_1446749_pxhere_com {
+            get {
+                object obj = ResourceManager.GetObject("caucasian-coat-doctor-employees-female-health-1446749-pxhere.com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +126,16 @@ namespace LaboratorioSystem.Properties {
         internal static System.Drawing.Bitmap paciente1 {
             get {
                 object obj = ResourceManager.GetObject("paciente1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profissionais {
+            get {
+                object obj = ResourceManager.GetObject("profissionais", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -129,5 +129,14 @@
   <ItemGroup>
     <None Include="Resources\paciente1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrador.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caucasian-coat-doctor-employees-female-health-1446749-pxhere.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profissionais.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

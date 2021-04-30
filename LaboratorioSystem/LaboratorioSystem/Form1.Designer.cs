@@ -58,6 +58,7 @@ namespace LaboratorioSystem
             this.label2.Size = new System.Drawing.Size(328, 39);
             this.label2.TabIndex = 3;
             this.label2.Text = "Laboratory System ";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // lblAgendar
             // 

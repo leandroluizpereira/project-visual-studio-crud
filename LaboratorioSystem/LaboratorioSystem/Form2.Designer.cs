@@ -80,7 +80,7 @@ namespace LaboratorioSystem
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(488, 34);
+            this.label2.Location = new System.Drawing.Point(470, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 31);
             this.label2.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace LaboratorioSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(544, 83);
+            this.label1.Location = new System.Drawing.Point(526, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 13);
             this.label1.TabIndex = 3;
@@ -135,7 +135,7 @@ namespace LaboratorioSystem
             this.panel1.Controls.Add(this.txtNumero);
             this.panel1.Controls.Add(this.txtBairro);
             this.panel1.Controls.Add(this.lblBairro);
-            this.panel1.Location = new System.Drawing.Point(402, 130);
+            this.panel1.Location = new System.Drawing.Point(395, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(652, 367);
             this.panel1.TabIndex = 21;
@@ -153,7 +153,7 @@ namespace LaboratorioSystem
             "30/05/2021",
             "13/06/2021",
             "15/06/2021"});
-            this.comboData.Location = new System.Drawing.Point(59, 173);
+            this.comboData.Location = new System.Drawing.Point(59, 165);
             this.comboData.Name = "comboData";
             this.comboData.Size = new System.Drawing.Size(98, 21);
             this.comboData.TabIndex = 37;
@@ -173,7 +173,7 @@ namespace LaboratorioSystem
             "14:00",
             "14:30",
             "15:00"});
-            this.comboHorario.Location = new System.Drawing.Point(216, 175);
+            this.comboHorario.Location = new System.Drawing.Point(214, 165);
             this.comboHorario.Name = "comboHorario";
             this.comboHorario.Size = new System.Drawing.Size(50, 21);
             this.comboHorario.TabIndex = 36;
@@ -181,7 +181,7 @@ namespace LaboratorioSystem
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(170, 178);
+            this.lblHora.Location = new System.Drawing.Point(168, 168);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(44, 13);
             this.lblHora.TabIndex = 35;
@@ -189,7 +189,7 @@ namespace LaboratorioSystem
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(61, 212);
+            this.txtSenha.Location = new System.Drawing.Point(60, 203);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(135, 20);
             this.txtSenha.TabIndex = 34;
@@ -197,7 +197,7 @@ namespace LaboratorioSystem
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 214);
+            this.label8.Location = new System.Drawing.Point(16, 206);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
             this.label8.TabIndex = 33;
@@ -209,7 +209,7 @@ namespace LaboratorioSystem
             this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btnVoltar.Location = new System.Drawing.Point(282, 269);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(122, 30);
+            this.btnVoltar.Size = new System.Drawing.Size(151, 30);
             this.btnVoltar.TabIndex = 30;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
@@ -218,7 +218,7 @@ namespace LaboratorioSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 176);
+            this.label6.Location = new System.Drawing.Point(20, 168);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 29;
@@ -227,7 +227,7 @@ namespace LaboratorioSystem
             // radioDinheiro
             // 
             this.radioDinheiro.AutoSize = true;
-            this.radioDinheiro.Location = new System.Drawing.Point(166, 269);
+            this.radioDinheiro.Location = new System.Drawing.Point(166, 280);
             this.radioDinheiro.Name = "radioDinheiro";
             this.radioDinheiro.Size = new System.Drawing.Size(64, 17);
             this.radioDinheiro.TabIndex = 28;
@@ -247,11 +247,11 @@ namespace LaboratorioSystem
             // radioCartao
             // 
             this.radioCartao.AutoSize = true;
-            this.radioCartao.Location = new System.Drawing.Point(60, 269);
+            this.radioCartao.Location = new System.Drawing.Point(57, 279);
             this.radioCartao.Name = "radioCartao";
-            this.radioCartao.Size = new System.Drawing.Size(105, 17);
+            this.radioCartao.Size = new System.Drawing.Size(106, 17);
             this.radioCartao.TabIndex = 26;
-            this.radioCartao.Text = "cartão de crédito";
+            this.radioCartao.Text = "Cartão de crédito";
             this.radioCartao.UseVisualStyleBackColor = true;
             // 
             // comboUnidades
@@ -274,7 +274,7 @@ namespace LaboratorioSystem
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(23, 318);
+            this.label5.Location = new System.Drawing.Point(23, 317);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 25;
@@ -284,7 +284,7 @@ namespace LaboratorioSystem
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(82, 319);
+            this.label4.Location = new System.Drawing.Point(78, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(351, 13);
             this.label4.TabIndex = 24;
@@ -319,7 +319,7 @@ namespace LaboratorioSystem
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(217, 20);
+            this.lblEmail.Location = new System.Drawing.Point(215, 20);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.TabIndex = 20;
@@ -338,7 +338,7 @@ namespace LaboratorioSystem
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(219, 250);
+            this.lblValor.Location = new System.Drawing.Point(215, 244);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(45, 13);
             this.lblValor.TabIndex = 16;
@@ -350,7 +350,7 @@ namespace LaboratorioSystem
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.Location = new System.Drawing.Point(282, 231);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(124, 30);
+            this.btnSalvar.Size = new System.Drawing.Size(151, 30);
             this.btnSalvar.TabIndex = 19;
             this.btnSalvar.Text = "Agendar ";
             this.btnSalvar.UseVisualStyleBackColor = false;
@@ -359,7 +359,7 @@ namespace LaboratorioSystem
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 248);
+            this.label3.Location = new System.Drawing.Point(14, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(202, 13);
             this.label3.TabIndex = 15;
@@ -397,11 +397,11 @@ namespace LaboratorioSystem
             this.checkedListBoxExame.Items.AddRange(new object[] {
             "Eletrocardiograma",
             "Ultrassonografia ",
-            "Anaçises Clinica",
-            "Teste do Covid"});
-            this.checkedListBoxExame.Location = new System.Drawing.Point(287, 127);
+            "Analises Clinica",
+            "Teste do Covid-19"});
+            this.checkedListBoxExame.Location = new System.Drawing.Point(296, 127);
             this.checkedListBoxExame.Name = "checkedListBoxExame";
-            this.checkedListBoxExame.Size = new System.Drawing.Size(117, 64);
+            this.checkedListBoxExame.Size = new System.Drawing.Size(110, 64);
             this.checkedListBoxExame.TabIndex = 14;
             this.checkedListBoxExame.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxExame_SelectedIndexChanged);
             // 
@@ -417,7 +417,7 @@ namespace LaboratorioSystem
             // lblExame
             // 
             this.lblExame.AutoSize = true;
-            this.lblExame.Location = new System.Drawing.Point(233, 131);
+            this.lblExame.Location = new System.Drawing.Point(242, 131);
             this.lblExame.Name = "lblExame";
             this.lblExame.Size = new System.Drawing.Size(47, 13);
             this.lblExame.TabIndex = 10;
@@ -433,7 +433,7 @@ namespace LaboratorioSystem
             // lblUnidades
             // 
             this.lblUnidades.AutoSize = true;
-            this.lblUnidades.Location = new System.Drawing.Point(6, 130);
+            this.lblUnidades.Location = new System.Drawing.Point(5, 130);
             this.lblUnidades.Name = "lblUnidades";
             this.lblUnidades.Size = new System.Drawing.Size(55, 13);
             this.lblUnidades.TabIndex = 12;
@@ -442,7 +442,7 @@ namespace LaboratorioSystem
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(375, 56);
+            this.lblNumero.Location = new System.Drawing.Point(374, 56);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(22, 13);
             this.lblNumero.TabIndex = 6;
@@ -486,7 +486,7 @@ namespace LaboratorioSystem
             this.panel2.BackColor = System.Drawing.Color.Salmon;
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(148, 130);
+            this.panel2.Location = new System.Drawing.Point(141, 130);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 367);
             this.panel2.TabIndex = 24;
@@ -495,18 +495,18 @@ namespace LaboratorioSystem
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 32);
+            this.label7.Location = new System.Drawing.Point(58, 37);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(135, 12);
             this.label7.TabIndex = 25;
-            this.label7.Text = "E obrigatorio o uso de mascara .";
+            this.label7.Text = "E obrigatório o uso de mascara .";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.ClientSize = new System.Drawing.Size(1184, 558);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
