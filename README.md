@@ -11,7 +11,7 @@
  - [x] ComboBox
  - [x] ListBox
  - [x] RadioButton
- - [x] PictureBox.
+ - [x] PictureBox
  - [x] Painel
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
 - [x] Imagem sem liçensa
