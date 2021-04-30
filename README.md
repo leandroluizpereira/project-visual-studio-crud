@@ -15,7 +15,7 @@
  - [x] Painel
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
 - [x] Imagem sem liçensa
-- [x] inicio 26/04/2021
+- [x] start 26/04/2021
 - [x]  finish conceito 29/04/2021
 
 
