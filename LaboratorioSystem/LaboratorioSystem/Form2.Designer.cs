@@ -32,11 +32,15 @@ namespace LaboratorioSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboData = new System.Windows.Forms.ComboBox();
+            this.comboHorario = new System.Windows.Forms.ComboBox();
+            this.lblHora = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.radioDinheiro = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.radioCartao = new System.Windows.Forms.RadioButton();
             this.comboUnidades = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +50,9 @@ namespace LaboratorioSystem
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.lblCpf = new System.Windows.Forms.Label();
@@ -60,17 +66,11 @@ namespace LaboratorioSystem
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.comboHorario = new System.Windows.Forms.ComboBox();
-            this.lblValor = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboData = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +80,7 @@ namespace LaboratorioSystem
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(498, 34);
+            this.label2.Location = new System.Drawing.Point(488, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 31);
             this.label2.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace LaboratorioSystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(550, 83);
+            this.label1.Location = new System.Drawing.Point(544, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 13);
             this.label1.TabIndex = 3;
@@ -141,6 +141,52 @@ namespace LaboratorioSystem
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // comboData
+            // 
+            this.comboData.FormattingEnabled = true;
+            this.comboData.Items.AddRange(new object[] {
+            "10/05/2021",
+            "15/05/2021",
+            "18/05/2021",
+            "21/05/2021",
+            "25/05/2021",
+            "30/05/2021",
+            "13/06/2021",
+            "15/06/2021"});
+            this.comboData.Location = new System.Drawing.Point(59, 173);
+            this.comboData.Name = "comboData";
+            this.comboData.Size = new System.Drawing.Size(98, 21);
+            this.comboData.TabIndex = 37;
+            // 
+            // comboHorario
+            // 
+            this.comboHorario.FormattingEnabled = true;
+            this.comboHorario.Items.AddRange(new object[] {
+            "10:00",
+            "10:30",
+            "11:00",
+            "11:30",
+            "12:00",
+            "12:30",
+            "13:00",
+            "13:30",
+            "14:00",
+            "14:30",
+            "15:00"});
+            this.comboHorario.Location = new System.Drawing.Point(216, 175);
+            this.comboHorario.Name = "comboHorario";
+            this.comboHorario.Size = new System.Drawing.Size(50, 21);
+            this.comboHorario.TabIndex = 36;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Location = new System.Drawing.Point(170, 178);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(44, 13);
+            this.lblHora.TabIndex = 35;
+            this.lblHora.Text = "Horario:";
+            // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(61, 212);
@@ -187,6 +233,16 @@ namespace LaboratorioSystem
             this.radioDinheiro.TabIndex = 28;
             this.radioDinheiro.Text = "Dinheiro";
             this.radioDinheiro.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // radioCartao
             // 
@@ -279,6 +335,15 @@ namespace LaboratorioSystem
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(219, 250);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(45, 13);
+            this.lblValor.TabIndex = 16;
+            this.lblValor.Text = "R$: 350";
+            // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.Green;
@@ -290,6 +355,16 @@ namespace LaboratorioSystem
             this.btnSalvar.Text = "Agendar ";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(202, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Qualquer exame selecionado taxa unica :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNome
             // 
@@ -406,16 +481,6 @@ namespace LaboratorioSystem
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Salmon;
@@ -436,71 +501,6 @@ namespace LaboratorioSystem
             this.label7.TabIndex = 25;
             this.label7.Text = "E obrigatorio o uso de mascara .";
             // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(170, 178);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(44, 13);
-            this.lblHora.TabIndex = 35;
-            this.lblHora.Text = "Horario:";
-            // 
-            // comboHorario
-            // 
-            this.comboHorario.FormattingEnabled = true;
-            this.comboHorario.Items.AddRange(new object[] {
-            "10:00",
-            "10:30",
-            "11:00",
-            "11:30",
-            "12:00",
-            "12:30",
-            "13:00",
-            "13:30",
-            "14:00",
-            "14:30",
-            "15:00"});
-            this.comboHorario.Location = new System.Drawing.Point(216, 175);
-            this.comboHorario.Name = "comboHorario";
-            this.comboHorario.Size = new System.Drawing.Size(50, 21);
-            this.comboHorario.TabIndex = 36;
-            // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(219, 250);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(45, 13);
-            this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "R$: 350";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 248);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Qualquer exame selecionado valor unico :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // comboData
-            // 
-            this.comboData.FormattingEnabled = true;
-            this.comboData.Items.AddRange(new object[] {
-            "10/05/2021",
-            "15/05/2021",
-            "18/05/2021",
-            "21/05/2021",
-            "25/05/2021",
-            "30/05/2021",
-            "13/06/2021",
-            "15/06/2021"});
-            this.comboData.Location = new System.Drawing.Point(59, 173);
-            this.comboData.Name = "comboData";
-            this.comboData.Size = new System.Drawing.Size(98, 21);
-            this.comboData.TabIndex = 37;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -516,8 +516,8 @@ namespace LaboratorioSystem
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

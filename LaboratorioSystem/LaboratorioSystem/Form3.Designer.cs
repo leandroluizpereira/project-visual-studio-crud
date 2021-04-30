@@ -30,6 +30,7 @@ namespace LaboratorioSystem
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblInformacao = new System.Windows.Forms.Label();
             this.lblinf = new System.Windows.Forms.Label();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -40,44 +41,43 @@ namespace LaboratorioSystem
             this.lblAdministrador = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblora = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblPagamento = new System.Windows.Forms.Label();
+            this.lblNum = new System.Windows.Forms.Label();
+            this.lblExame = new System.Windows.Forms.Label();
+            this.lblCpf = new System.Windows.Forms.Label();
+            this.lblRua = new System.Windows.Forms.Label();
+            this.lblEmailuser = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.lblUnidades = new System.Windows.Forms.Label();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblCelular = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbln = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblks = new System.Windows.Forms.Label();
             this.lblr = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
             this.lblU = new System.Windows.Forms.Label();
             this.lblnumero = new System.Windows.Forms.Label();
             this.lblb = new System.Windows.Forms.Label();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            this.lblValor = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.lblCelular = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.lblUnidades = new System.Windows.Forms.Label();
-            this.lblData = new System.Windows.Forms.Label();
-            this.lblEmailuser = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
-            this.lblCpf = new System.Windows.Forms.Label();
-            this.lblExame = new System.Windows.Forms.Label();
-            this.lblNum = new System.Windows.Forms.Label();
-            this.lblPagamento = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblInformacao = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblora = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -91,10 +91,20 @@ namespace LaboratorioSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.txtEmailAdministrador);
-            this.panel2.Location = new System.Drawing.Point(820, 327);
+            this.panel2.Location = new System.Drawing.Point(827, 334);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(270, 180);
             this.panel2.TabIndex = 11;
+            // 
+            // lblInformacao
+            // 
+            this.lblInformacao.AutoSize = true;
+            this.lblInformacao.ForeColor = System.Drawing.Color.Maroon;
+            this.lblInformacao.Location = new System.Drawing.Point(100, 157);
+            this.lblInformacao.Name = "lblInformacao";
+            this.lblInformacao.Size = new System.Drawing.Size(19, 13);
+            this.lblInformacao.TabIndex = 7;
+            this.lblInformacao.Text = "----";
             // 
             // lblinf
             // 
@@ -142,7 +152,7 @@ namespace LaboratorioSystem
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(19, 25);
+            this.label2.Location = new System.Drawing.Point(19, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 13);
             this.label2.TabIndex = 2;
@@ -167,7 +177,7 @@ namespace LaboratorioSystem
             this.lblAdministrador.AutoSize = true;
             this.lblAdministrador.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdministrador.ForeColor = System.Drawing.Color.White;
-            this.lblAdministrador.Location = new System.Drawing.Point(504, 21);
+            this.lblAdministrador.Location = new System.Drawing.Point(429, 32);
             this.lblAdministrador.Name = "lblAdministrador";
             this.lblAdministrador.Size = new System.Drawing.Size(311, 31);
             this.lblAdministrador.TabIndex = 10;
@@ -219,6 +229,144 @@ namespace LaboratorioSystem
             this.panel3.Size = new System.Drawing.Size(652, 367);
             this.panel3.TabIndex = 22;
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Location = new System.Drawing.Point(183, 172);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(70, 13);
+            this.lblHora.TabIndex = 43;
+            this.lblHora.Text = "---------------------";
+            // 
+            // lblora
+            // 
+            this.lblora.AutoSize = true;
+            this.lblora.Location = new System.Drawing.Point(140, 172);
+            this.lblora.Name = "lblora";
+            this.lblora.Size = new System.Drawing.Size(44, 13);
+            this.lblora.TabIndex = 42;
+            this.lblora.Text = "Horario:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(50, 275);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 13);
+            this.label5.TabIndex = 41;
+            this.label5.Text = "Forma de pagamento :";
+            // 
+            // lblPagamento
+            // 
+            this.lblPagamento.AutoSize = true;
+            this.lblPagamento.Location = new System.Drawing.Point(162, 275);
+            this.lblPagamento.Name = "lblPagamento";
+            this.lblPagamento.Size = new System.Drawing.Size(55, 13);
+            this.lblPagamento.TabIndex = 40;
+            this.lblPagamento.Text = "----------------";
+            // 
+            // lblNum
+            // 
+            this.lblNum.AutoSize = true;
+            this.lblNum.Location = new System.Drawing.Point(391, 56);
+            this.lblNum.Name = "lblNum";
+            this.lblNum.Size = new System.Drawing.Size(46, 13);
+            this.lblNum.TabIndex = 39;
+            this.lblNum.Text = "-------------";
+            // 
+            // lblExame
+            // 
+            this.lblExame.AutoSize = true;
+            this.lblExame.Location = new System.Drawing.Point(235, 131);
+            this.lblExame.Name = "lblExame";
+            this.lblExame.Size = new System.Drawing.Size(112, 13);
+            this.lblExame.TabIndex = 38;
+            this.lblExame.Text = "-----------------------------------";
+            // 
+            // lblCpf
+            // 
+            this.lblCpf.AutoSize = true;
+            this.lblCpf.Location = new System.Drawing.Point(220, 94);
+            this.lblCpf.Name = "lblCpf";
+            this.lblCpf.Size = new System.Drawing.Size(130, 13);
+            this.lblCpf.TabIndex = 37;
+            this.lblCpf.Text = "-----------------------------------------";
+            // 
+            // lblRua
+            // 
+            this.lblRua.AutoSize = true;
+            this.lblRua.Location = new System.Drawing.Point(222, 56);
+            this.lblRua.Name = "lblRua";
+            this.lblRua.Size = new System.Drawing.Size(127, 13);
+            this.lblRua.TabIndex = 36;
+            this.lblRua.Text = "----------------------------------------";
+            // 
+            // lblEmailuser
+            // 
+            this.lblEmailuser.AutoSize = true;
+            this.lblEmailuser.Location = new System.Drawing.Point(220, 20);
+            this.lblEmailuser.Name = "lblEmailuser";
+            this.lblEmailuser.Size = new System.Drawing.Size(127, 13);
+            this.lblEmailuser.TabIndex = 35;
+            this.lblEmailuser.Text = "----------------------------------------";
+            // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(42, 172);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(61, 13);
+            this.lblData.TabIndex = 34;
+            this.lblData.Text = "------------------";
+            // 
+            // lblUnidades
+            // 
+            this.lblUnidades.AutoSize = true;
+            this.lblUnidades.Location = new System.Drawing.Point(52, 131);
+            this.lblUnidades.Name = "lblUnidades";
+            this.lblUnidades.Size = new System.Drawing.Size(112, 13);
+            this.lblUnidades.TabIndex = 33;
+            this.lblUnidades.Text = "-----------------------------------";
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Location = new System.Drawing.Point(43, 94);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(118, 13);
+            this.lblBairro.TabIndex = 32;
+            this.lblBairro.Text = "-------------------------------------";
+            // 
+            // lblCelular
+            // 
+            this.lblCelular.AutoSize = true;
+            this.lblCelular.Location = new System.Drawing.Point(47, 56);
+            this.lblCelular.Name = "lblCelular";
+            this.lblCelular.Size = new System.Drawing.Size(112, 13);
+            this.lblCelular.TabIndex = 31;
+            this.lblCelular.Text = "-----------------------------------";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(44, 20);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(112, 13);
+            this.lblNome.TabIndex = 30;
+            this.lblNome.Text = "-----------------------------------";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Green;
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnVoltar.Location = new System.Drawing.Point(301, 250);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(109, 36);
+            this.btnVoltar.TabIndex = 13;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -227,6 +375,16 @@ namespace LaboratorioSystem
             this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 29;
             this.label6.Text = "Data:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // lblc
             // 
@@ -255,6 +413,24 @@ namespace LaboratorioSystem
             this.lbln.Size = new System.Drawing.Size(38, 13);
             this.lbln.TabIndex = 2;
             this.lbln.Text = "Nome:";
+            // 
+            // lblValor
+            // 
+            this.lblValor.AutoSize = true;
+            this.lblValor.Location = new System.Drawing.Point(138, 243);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(42, 13);
+            this.lblValor.TabIndex = 16;
+            this.lblValor.Text = "R$:350";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(54, 242);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Taxa do exame:";
             // 
             // lblks
             // 
@@ -310,45 +486,6 @@ namespace LaboratorioSystem
             this.lblb.TabIndex = 9;
             this.lblb.Text = "Bairro:";
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.BackColor = System.Drawing.Color.Green;
-            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnVoltar.Location = new System.Drawing.Point(301, 250);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(109, 36);
-            this.btnVoltar.TabIndex = 13;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // lblValor
-            // 
-            this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(138, 243);
-            this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(42, 13);
-            this.lblValor.TabIndex = 16;
-            this.lblValor.Text = "R$:350";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 242);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Valor do exame:";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(44, 20);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(112, 13);
-            this.lblNome.TabIndex = 30;
-            this.lblNome.Text = "-----------------------------------";
-            // 
             // btnPesquisar
             // 
             this.btnPesquisar.BackColor = System.Drawing.Color.Green;
@@ -368,15 +505,6 @@ namespace LaboratorioSystem
             this.txtPesquisar.Size = new System.Drawing.Size(103, 20);
             this.txtPesquisar.TabIndex = 14;
             // 
-            // lblCelular
-            // 
-            this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(47, 56);
-            this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(112, 13);
-            this.lblCelular.TabIndex = 31;
-            this.lblCelular.Text = "-----------------------------------";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -387,143 +515,16 @@ namespace LaboratorioSystem
             this.label4.TabIndex = 15;
             this.label4.Text = "Número id:";
             // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(43, 94);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(112, 13);
-            this.lblBairro.TabIndex = 32;
-            this.lblBairro.Text = "-----------------------------------";
-            // 
-            // lblUnidades
-            // 
-            this.lblUnidades.AutoSize = true;
-            this.lblUnidades.Location = new System.Drawing.Point(52, 131);
-            this.lblUnidades.Name = "lblUnidades";
-            this.lblUnidades.Size = new System.Drawing.Size(112, 13);
-            this.lblUnidades.TabIndex = 33;
-            this.lblUnidades.Text = "-----------------------------------";
-            // 
-            // lblData
-            // 
-            this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(42, 172);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(46, 13);
-            this.lblData.TabIndex = 34;
-            this.lblData.Text = "-------------";
-            // 
-            // lblEmailuser
-            // 
-            this.lblEmailuser.AutoSize = true;
-            this.lblEmailuser.Location = new System.Drawing.Point(220, 20);
-            this.lblEmailuser.Name = "lblEmailuser";
-            this.lblEmailuser.Size = new System.Drawing.Size(121, 13);
-            this.lblEmailuser.TabIndex = 35;
-            this.lblEmailuser.Text = "--------------------------------------";
-            // 
-            // lblRua
-            // 
-            this.lblRua.AutoSize = true;
-            this.lblRua.Location = new System.Drawing.Point(222, 56);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(121, 13);
-            this.lblRua.TabIndex = 36;
-            this.lblRua.Text = "--------------------------------------";
-            // 
-            // lblCpf
-            // 
-            this.lblCpf.AutoSize = true;
-            this.lblCpf.Location = new System.Drawing.Point(220, 94);
-            this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(130, 13);
-            this.lblCpf.TabIndex = 37;
-            this.lblCpf.Text = "-----------------------------------------";
-            // 
-            // lblExame
-            // 
-            this.lblExame.AutoSize = true;
-            this.lblExame.Location = new System.Drawing.Point(235, 131);
-            this.lblExame.Name = "lblExame";
-            this.lblExame.Size = new System.Drawing.Size(112, 13);
-            this.lblExame.TabIndex = 38;
-            this.lblExame.Text = "-----------------------------------";
-            // 
-            // lblNum
-            // 
-            this.lblNum.AutoSize = true;
-            this.lblNum.Location = new System.Drawing.Point(391, 56);
-            this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(46, 13);
-            this.lblNum.TabIndex = 39;
-            this.lblNum.Text = "-------------";
-            // 
-            // lblPagamento
-            // 
-            this.lblPagamento.AutoSize = true;
-            this.lblPagamento.Location = new System.Drawing.Point(162, 275);
-            this.lblPagamento.Name = "lblPagamento";
-            this.lblPagamento.Size = new System.Drawing.Size(55, 13);
-            this.lblPagamento.TabIndex = 40;
-            this.lblPagamento.Text = "----------------";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 275);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 13);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "Forma de pagamento :";
-            // 
-            // lblInformacao
-            // 
-            this.lblInformacao.AutoSize = true;
-            this.lblInformacao.ForeColor = System.Drawing.Color.Maroon;
-            this.lblInformacao.Location = new System.Drawing.Point(99, 158);
-            this.lblInformacao.Name = "lblInformacao";
-            this.lblInformacao.Size = new System.Drawing.Size(55, 13);
-            this.lblInformacao.TabIndex = 7;
-            this.lblInformacao.Text = "----------------";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.pictureBox1.Image = global::LaboratorioSystem.Properties.Resources.paciente;
-            this.pictureBox1.Location = new System.Drawing.Point(746, 103);
+            this.pictureBox1.Location = new System.Drawing.Point(749, 103);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(413, 208);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblora
-            // 
-            this.lblora.AutoSize = true;
-            this.lblora.Location = new System.Drawing.Point(140, 172);
-            this.lblora.Name = "lblora";
-            this.lblora.Size = new System.Drawing.Size(44, 13);
-            this.lblora.TabIndex = 42;
-            this.lblora.Text = "Horario:";
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Location = new System.Drawing.Point(183, 172);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(70, 13);
-            this.lblHora.TabIndex = 43;
-            this.lblHora.Text = "---------------------";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form3
             // 
@@ -545,8 +546,8 @@ namespace LaboratorioSystem
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
