@@ -14,3 +14,5 @@
  - [x] PictureBox.
  - [x] Painel
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
+
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/principal.png)
