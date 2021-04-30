@@ -14,7 +14,7 @@
  - [x] PictureBox.
  - [x] Painel
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
-- [x] Imagem sem linçensa
+- [x] Imagem sem liçensa
 
 # Tela Principal
 
