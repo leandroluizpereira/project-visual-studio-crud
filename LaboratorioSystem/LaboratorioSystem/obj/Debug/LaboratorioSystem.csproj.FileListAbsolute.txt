@@ -16,3 +16,5 @@ C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\Zs
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\System.Buffers.dll
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\bin\Debug\MySql.Data.xml
 C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.csproj.CopyComplete
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.FormConfiguracaoDadosAdministrador.resources
+C:\xampp\htdocs\Leandro\C sharp\LaboratorioSystem\LaboratorioSystem\obj\Debug\LaboratorioSystem.FormConfiguracaoDadosUsuario.resources

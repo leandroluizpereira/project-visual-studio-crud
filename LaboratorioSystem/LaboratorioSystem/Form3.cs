@@ -18,12 +18,7 @@ namespace LaboratorioSystem
         public Form3()
         {
             InitializeComponent();
-     
-
-
         }
-
-
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -63,6 +58,7 @@ namespace LaboratorioSystem
                 lblCpf.Text = dr["cpf"].ToString();
                 lblData.Text = dr["data"].ToString();
                 lblHora.Text = dr["horario"].ToString();
+                lblValor.Text = dr["valor"].ToString();
                 lblPagamento.Text = dr["pagamento"].ToString();
               //  lblExame.Text = dr["exame"].ToString();
             }
@@ -77,17 +73,7 @@ namespace LaboratorioSystem
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             
-            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbpaciente");
-            String sql = "update tbfuncionario set email='" + txtEmailAdministrador.Text + "', senha='" + txtPassword.Text + "'";
-            MySqlCommand cmm = new MySqlCommand(sql, conn);
-            conn.Open();
-            cmm.ExecuteNonQuery();
-            cmm.Dispose();
-            conn.Close();
-
-            lblInformacao.Text = "Alterado com sucesso!!!";
-            txtEmailAdministrador.Text = "";
-            txtPassword.Text = "";
+        
 
         }
 
@@ -100,7 +86,40 @@ namespace LaboratorioSystem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt = new Thread(novoFormUsuario);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+
+        private void novoFormUsuario()
+        {
+            Application.Run(new FormConfiguracaoDadosUsuario());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nt = new Thread(novoFormAdm);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+        }
+
+        private void novoFormAdm()
+        {
+            Application.Run(new FormConfiguracaoDadosAdministrador());
+        }
+
+        private void txtEmailAdministrador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }
+    
+    
     
 

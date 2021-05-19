@@ -79,6 +79,18 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConfiguracaoDadosAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguracaoDadosAdministrador.Designer.cs">
+      <DependentUpon>FormConfiguracaoDadosAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguracaoDadosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguracaoDadosUsuario.Designer.cs">
+      <DependentUpon>FormConfiguracaoDadosUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguracaoDadosAdministrador.resx">
+      <DependentUpon>FormConfiguracaoDadosAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguracaoDadosUsuario.resx">
+      <DependentUpon>FormConfiguracaoDadosUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
