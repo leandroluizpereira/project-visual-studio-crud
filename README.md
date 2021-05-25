@@ -26,7 +26,7 @@
 
 # Agendamento
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/cliente.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/2.png)
 
 # Administrador
 
