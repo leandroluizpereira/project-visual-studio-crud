@@ -13,21 +13,29 @@
  - [x] RadioButton
  - [x] PictureBox
  - [x] Painel
+ - [x] DataGridView
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
 - [x] Imagem sem licensa
-- [x] Start 26/04/2021
-- [x] Finish conceito 29/04/2021
+
 
 
 
 # Principal
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/principal.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/1.png)
 
 # Agendamento
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/cliente.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/2.png)
 
 # Administrador
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/administrador.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/3.png)
+
+# Gerenciamento de funcionario
+
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/4.png)
+
+# Consultar ou excluir dados do paciente
+
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/5.png)
