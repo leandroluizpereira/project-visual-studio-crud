@@ -13,10 +13,10 @@
  - [x] RadioButton
  - [x] PictureBox
  - [x] Painel
+ - [x] DataGridView
 - [x] O sistema deve permitir cadastrar novos usuários e produtos/serviços
 - [x] Imagem sem licensa
-- [x] Start 26/04/2021
-- [x] Finish conceito 29/04/2021
+
 
 
 
