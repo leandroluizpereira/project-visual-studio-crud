@@ -23,16 +23,18 @@ namespace LaboratorioSystem
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbpaciente");
-            String sql = "update tbfuncionario set email='" + txtEmailAdministrador.Text + "', senha='" + txtPassword.Text + "'";
+            String sql = "update  tbfuncionario set email='" + txtEmailAdministrador.Text + "', senha='" + txtPassword.Text + "',cargo='" + comboBoxCargo.Text + "',nome='" + lblNome.Text + "'";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
             conn.Open();
             cmm.ExecuteNonQuery();
             cmm.Dispose();
             conn.Close();
 
-            lblInformacao.Text = "Alterado com sucesso!!!";
+        
             txtEmailAdministrador.Text = "";
             txtPassword.Text = "";
+            comboBoxCargo.Text = "";
+            lblNome.Text = "";
 
         }
 
@@ -57,6 +59,53 @@ namespace LaboratorioSystem
         private void novovoltarForm3()
         {
             Application.Run(new Form3());
+        }
+
+        private void lblInformacao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
+            String sql = "insert into tbfuncionario(nome,senha,email,cargo) " +
+                "values(@nome,@senha,@email,@cargo)";
+            MySqlCommand cmm = new MySqlCommand(sql, conn);
+
+            if (txtNome.Text != "" && txtSenha.Text != "" && txtEmail.Text != ""
+                && cargoCombo.Text != "")
+            {
+                cmm.Parameters.AddWithValue("@nome", txtNome.Text);
+                cmm.Parameters.AddWithValue("@senha", txtSenha.Text);
+                cmm.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmm.Parameters.AddWithValue("@cargo", cargoCombo.Text);
+      
+
+                conn.Open();
+                cmm.ExecuteNonQuery();
+                cmm.Dispose();
+                conn.Close();
+
+                MessageBox.Show("Funcionario cadastrado com sucesso!");
+
+                this.Close();
+           
+            }
+            else
+            {
+                MessageBox.Show("Os dados devem ser preenchido!");
+                this.Close();
+         
+            }
+
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

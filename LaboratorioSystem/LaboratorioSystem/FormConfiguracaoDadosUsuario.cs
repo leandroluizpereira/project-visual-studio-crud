@@ -108,16 +108,72 @@ namespace LaboratorioSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbPaciente");
+                String sql = "";
+                if (textMatricula.Text != "")
+                {
+                    sql = "delete from tbpaciente where id=" + textMatricula.Text;
+                }
+                MySqlCommand cmm = new MySqlCommand(sql, conn);
+                conn.Open();
+                cmm.ExecuteNonQuery();
+                cmm.Dispose();
+                conn.Close();
+
+                MessageBox.Show("Registro excluido com sucesso!");
+                //btn consultar
+                button2_Click(null, null);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+
+        private void mudarCorHover(object sender, EventArgs e)
+        {
+            btnConsultar.BackColor = Color.Green;
+            btnConsultar.ForeColor = Color.White;
+         
+        }
+
+        private void mudarCorLeave(object sender, EventArgs e)
+        {
+            btnConsultar.BackColor = Color.Gainsboro;
+            btnConsultar.ForeColor = Color.Black;
+        }
+
+        private void mudarCorHoverExcluir(object sender, EventArgs e)
+        {
+            btnExcluir.BackColor = Color.Maroon;
+            btnExcluir.ForeColor = Color.White;
+        }
+
+        private void mudarCorLeaveExcluir(object sender, EventArgs e)
+        {
+            btnExcluir.BackColor = Color.Gainsboro;
+            btnExcluir.ForeColor = Color.Black;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             this.Close();
-            nt = new Thread(novovoltarForm3);
+            nt = new Thread(novoForm1);
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
         }
 
-        private void novovoltarForm3()
+        private void novoForm1()
         {
-            Application.Run(new Form3());
+            Application.Run(new Form1());
         }
     }
     }
+    
 

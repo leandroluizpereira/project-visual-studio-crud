@@ -103,7 +103,7 @@ namespace LaboratorioSystem
 
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbpaciente");
             //Selecionando a tabela fucionario
-            String sql = "select * from tbFuncionario ";
+            String sql = "select * from tbfuncionario ";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
             conn.Open();
             MySqlDataReader dr = cmm.ExecuteReader();

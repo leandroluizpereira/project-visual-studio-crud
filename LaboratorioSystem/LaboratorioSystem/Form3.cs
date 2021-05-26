@@ -51,7 +51,7 @@ namespace LaboratorioSystem
                 lblCelular.Text = dr["celular"].ToString();
                 lblBairro.Text = dr["bairro"].ToString();
                 lblUnidades.Text = dr["unidades"].ToString();
-                lblExame.Text= dr["exames"].ToString();
+                lblExame.Text = dr["exames"].ToString();
                 lblEmailuser.Text = dr["email"].ToString();
                 lblRua.Text = dr["rua"].ToString();
                 lblNum.Text = dr["numero"].ToString();
@@ -60,7 +60,7 @@ namespace LaboratorioSystem
                 lblHora.Text = dr["horario"].ToString();
                 lblValor.Text = dr["valor"].ToString();
                 lblPagamento.Text = dr["pagamento"].ToString();
-              //  lblExame.Text = dr["exame"].ToString();
+                //  lblExame.Text = dr["exame"].ToString();
             }
             else
             {
@@ -72,8 +72,8 @@ namespace LaboratorioSystem
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            
-        
+
+
 
         }
 
@@ -117,8 +117,11 @@ namespace LaboratorioSystem
         {
 
         }
+
+   
     }
-    }
+}
+    
     
     
     
