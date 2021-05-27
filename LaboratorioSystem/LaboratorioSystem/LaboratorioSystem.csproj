@@ -91,6 +91,7 @@
     <Compile Include="FormConfiguracaoDadosUsuario.Designer.cs">
       <DependentUpon>FormConfiguracaoDadosUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

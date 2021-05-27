@@ -90,7 +90,7 @@ namespace LaboratorioSystem
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel1.BackColor = System.Drawing.Color.SandyBrown;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(30, 103);
@@ -100,7 +100,7 @@ namespace LaboratorioSystem
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.NavajoWhite;
+            this.panel3.BackColor = System.Drawing.Color.LightSalmon;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.lblHora);
             this.panel3.Controls.Add(this.lblora);
@@ -138,6 +138,7 @@ namespace LaboratorioSystem
             // lblHora
             // 
             this.lblHora.AutoSize = true;
+            this.lblHora.ForeColor = System.Drawing.Color.Maroon;
             this.lblHora.Location = new System.Drawing.Point(183, 172);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(70, 13);
@@ -165,6 +166,7 @@ namespace LaboratorioSystem
             // lblPagamento
             // 
             this.lblPagamento.AutoSize = true;
+            this.lblPagamento.ForeColor = System.Drawing.Color.Maroon;
             this.lblPagamento.Location = new System.Drawing.Point(162, 276);
             this.lblPagamento.Name = "lblPagamento";
             this.lblPagamento.Size = new System.Drawing.Size(70, 13);
@@ -174,6 +176,7 @@ namespace LaboratorioSystem
             // lblNum
             // 
             this.lblNum.AutoSize = true;
+            this.lblNum.ForeColor = System.Drawing.Color.Maroon;
             this.lblNum.Location = new System.Drawing.Point(391, 56);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(46, 13);
@@ -183,6 +186,7 @@ namespace LaboratorioSystem
             // lblExame
             // 
             this.lblExame.AutoSize = true;
+            this.lblExame.ForeColor = System.Drawing.Color.Maroon;
             this.lblExame.Location = new System.Drawing.Point(322, 131);
             this.lblExame.Name = "lblExame";
             this.lblExame.Size = new System.Drawing.Size(112, 13);
@@ -192,6 +196,7 @@ namespace LaboratorioSystem
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
+            this.lblCpf.ForeColor = System.Drawing.Color.Maroon;
             this.lblCpf.Location = new System.Drawing.Point(217, 94);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(130, 13);
@@ -201,6 +206,7 @@ namespace LaboratorioSystem
             // lblRua
             // 
             this.lblRua.AutoSize = true;
+            this.lblRua.ForeColor = System.Drawing.Color.Maroon;
             this.lblRua.Location = new System.Drawing.Point(219, 56);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(127, 13);
@@ -210,6 +216,7 @@ namespace LaboratorioSystem
             // lblEmailuser
             // 
             this.lblEmailuser.AutoSize = true;
+            this.lblEmailuser.ForeColor = System.Drawing.Color.Maroon;
             this.lblEmailuser.Location = new System.Drawing.Point(220, 20);
             this.lblEmailuser.Name = "lblEmailuser";
             this.lblEmailuser.Size = new System.Drawing.Size(127, 13);
@@ -219,6 +226,7 @@ namespace LaboratorioSystem
             // lblData
             // 
             this.lblData.AutoSize = true;
+            this.lblData.ForeColor = System.Drawing.Color.Maroon;
             this.lblData.Location = new System.Drawing.Point(42, 172);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(79, 13);
@@ -228,6 +236,7 @@ namespace LaboratorioSystem
             // lblUnidades
             // 
             this.lblUnidades.AutoSize = true;
+            this.lblUnidades.ForeColor = System.Drawing.Color.Maroon;
             this.lblUnidades.Location = new System.Drawing.Point(52, 131);
             this.lblUnidades.Name = "lblUnidades";
             this.lblUnidades.Size = new System.Drawing.Size(217, 13);
@@ -237,6 +246,7 @@ namespace LaboratorioSystem
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
+            this.lblBairro.ForeColor = System.Drawing.Color.Maroon;
             this.lblBairro.Location = new System.Drawing.Point(45, 94);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(118, 13);
@@ -246,6 +256,7 @@ namespace LaboratorioSystem
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
+            this.lblCelular.ForeColor = System.Drawing.Color.Maroon;
             this.lblCelular.Location = new System.Drawing.Point(47, 56);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(118, 13);
@@ -255,6 +266,7 @@ namespace LaboratorioSystem
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.ForeColor = System.Drawing.Color.Maroon;
             this.lblNome.Location = new System.Drawing.Point(44, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(121, 13);
@@ -435,7 +447,7 @@ namespace LaboratorioSystem
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(413, 52);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Editar dados dos pacientes";
+            this.button1.Text = "Consultar ou excluir dados paciente";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

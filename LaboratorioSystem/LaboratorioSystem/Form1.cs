@@ -100,9 +100,9 @@ namespace LaboratorioSystem
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-
+            /* primeiro exemplo :
             MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database=dbpaciente");
-            //Selecionando a tabela fucionario
+            Selecionando a tabela fucionario
             String sql = "select * from tbfuncionario ";
             MySqlCommand cmm = new MySqlCommand(sql, conn);
             conn.Open();
@@ -125,44 +125,66 @@ namespace LaboratorioSystem
           
             cmm.Dispose();
             conn.Close();
-        
+            */
 
+            try
+            {
+                MySqlConnection conn = new MySqlConnection("server=localhost;uid=root;pwd='';database='dbpaciente'");
+                string sql = "select * from tbfuncionario where email='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "'";
+                MySqlCommand comm = new MySqlCommand(sql, conn);
+                conn.Open();
+                MySqlDataReader dr = comm.ExecuteReader();
+                Funcionario.matricula = 0;
+                Funcionario.nome = "";
+                Funcionario.cargo = "";
+                Funcionario.status = "";
+                Funcionario.email = "";
+                if (dr.Read())
+                {
+                    Funcionario.matricula = (int)dr["matricula"];
+                    Funcionario.nome = (String)dr["nome"];
+                    Funcionario.cargo = (String)dr["cargo"];
+                    Funcionario.status = (String)dr["status"];
+                    Funcionario.email = (String)dr["email"];
+                }
+                comm.Dispose();
+                conn.Close();
+                if (Funcionario.matricula == 0)
+                {
+                    MessageBox.Show("Usuário ou senha inválidos!");
+                }
+                else if (Funcionario.status.Equals("bloqueado"))
+                {
+                    MessageBox.Show("Usuário bloqueado pelo administrador!");
+                }
+                else
+                {
+                    this.Close();
+                    nt = new Thread(novoForm3);
+                    nt.SetApartmentState(ApartmentState.STA);
+                    nt.Start();
+                    this.Dispose(false);
+                }
 
-
-
-
-
-         
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu o seguinte erro: " + ex.Message);
+            }
         }
 
-        private void novoForm()
+        private void novoForm3()
         {
             Application.Run(new Form3());
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+
+
+
+
+
+
+
+    

@@ -32,6 +32,9 @@ namespace LaboratorioSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.comboData = new System.Windows.Forms.DateTimePicker();
+            this.checkedListBoxExame = new System.Windows.Forms.ComboBox();
             this.comboHorario = new System.Windows.Forms.ComboBox();
             this.lblHora = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -39,6 +42,7 @@ namespace LaboratorioSystem
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.radioDinheiro = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.radioCartao = new System.Windows.Forms.RadioButton();
             this.comboUnidades = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -64,15 +68,11 @@ namespace LaboratorioSystem
             this.lblBairro = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkedListBoxExame = new System.Windows.Forms.ComboBox();
-            this.comboData = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -142,6 +142,42 @@ namespace LaboratorioSystem
             this.panel1.Size = new System.Drawing.Size(652, 367);
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(17, 235);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 34);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Verificar total do valor exame";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboData
+            // 
+            this.comboData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.comboData.Location = new System.Drawing.Point(59, 165);
+            this.comboData.Name = "comboData";
+            this.comboData.Size = new System.Drawing.Size(138, 20);
+            this.comboData.TabIndex = 39;
+            // 
+            // checkedListBoxExame
+            // 
+            this.checkedListBoxExame.FormattingEnabled = true;
+            this.checkedListBoxExame.Items.AddRange(new object[] {
+            "Eletrocardiograma",
+            "Ultrassonografia",
+            "Analises clinicas",
+            "Teste do covid-19",
+            "Mamografia",
+            "Espermograma",
+            "Colonoscopia"});
+            this.checkedListBoxExame.Location = new System.Drawing.Point(292, 127);
+            this.checkedListBoxExame.Name = "checkedListBoxExame";
+            this.checkedListBoxExame.Size = new System.Drawing.Size(121, 21);
+            this.checkedListBoxExame.TabIndex = 38;
             // 
             // comboHorario
             // 
@@ -218,6 +254,17 @@ namespace LaboratorioSystem
             this.radioDinheiro.TabIndex = 28;
             this.radioDinheiro.Text = "Dinheiro";
             this.radioDinheiro.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // radioCartao
             // 
@@ -454,30 +501,6 @@ namespace LaboratorioSystem
             this.label7.TabIndex = 25;
             this.label7.Text = "E obrigatório o uso de mascara .";
             // 
-            // checkedListBoxExame
-            // 
-            this.checkedListBoxExame.FormattingEnabled = true;
-            this.checkedListBoxExame.Items.AddRange(new object[] {
-            "Eletrocardiograma",
-            "Ultrassonografia",
-            "Analises clinicas",
-            "Teste do covid-19",
-            "Mamografia",
-            "Espermograma",
-            "Colonoscopia"});
-            this.checkedListBoxExame.Location = new System.Drawing.Point(292, 127);
-            this.checkedListBoxExame.Name = "checkedListBoxExame";
-            this.checkedListBoxExame.Size = new System.Drawing.Size(121, 21);
-            this.checkedListBoxExame.TabIndex = 38;
-            // 
-            // comboData
-            // 
-            this.comboData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.comboData.Location = new System.Drawing.Point(59, 165);
-            this.comboData.Name = "comboData";
-            this.comboData.Size = new System.Drawing.Size(138, 20);
-            this.comboData.TabIndex = 39;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.NavajoWhite;
@@ -488,29 +511,6 @@ namespace LaboratorioSystem
             this.pictureBox1.Size = new System.Drawing.Size(200, 332);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::LaboratorioSystem.Properties.Resources.agendamento;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 332);
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(17, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 34);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Verificar total do valor exame";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -527,10 +527,10 @@ namespace LaboratorioSystem
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

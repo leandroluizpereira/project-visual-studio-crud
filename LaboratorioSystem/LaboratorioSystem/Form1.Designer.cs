@@ -58,7 +58,7 @@ namespace LaboratorioSystem
             this.label2.Size = new System.Drawing.Size(328, 39);
             this.label2.TabIndex = 3;
             this.label2.Text = "Laboratory System ";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+
             // 
             // lblAgendar
             // 
@@ -117,7 +117,7 @@ namespace LaboratorioSystem
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(140, 20);
             this.txtSenha.TabIndex = 9;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+
             // 
             // txtEmail
             // 
@@ -134,7 +134,7 @@ namespace LaboratorioSystem
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Senha:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // lblEmail
             // 
@@ -167,7 +167,7 @@ namespace LaboratorioSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(162, 195);
             this.panel2.TabIndex = 8;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+     
             // 
             // pictureBox2
             // 
@@ -178,7 +178,7 @@ namespace LaboratorioSystem
             this.pictureBox2.Size = new System.Drawing.Size(419, 195);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+          
             // 
             // pictureBox1
             // 

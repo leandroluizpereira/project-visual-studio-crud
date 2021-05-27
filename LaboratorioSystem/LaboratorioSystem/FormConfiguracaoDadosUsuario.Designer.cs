@@ -30,13 +30,13 @@ namespace LaboratorioSystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblMatricula = new System.Windows.Forms.Label();
+            this.textMatricula = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            this.textMatricula = new System.Windows.Forms.TextBox();
-            this.lblMatricula = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -56,18 +56,66 @@ namespace LaboratorioSystem
             this.panel1.Size = new System.Drawing.Size(1160, 505);
             this.panel1.TabIndex = 20;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.IndianRed;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(434, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(481, 31);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Consultar ou excluir dados do paciente";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(969, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 34);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblMatricula
+            // 
+            this.lblMatricula.AutoSize = true;
+            this.lblMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMatricula.Location = new System.Drawing.Point(163, 34);
+            this.lblMatricula.Name = "lblMatricula";
+            this.lblMatricula.Size = new System.Drawing.Size(53, 13);
+            this.lblMatricula.TabIndex = 19;
+            this.lblMatricula.Text = "Matricula:";
+            // 
+            // textMatricula
+            // 
+            this.textMatricula.Location = new System.Drawing.Point(222, 31);
+            this.textMatricula.Name = "textMatricula";
+            this.textMatricula.Size = new System.Drawing.Size(53, 20);
+            this.textMatricula.TabIndex = 18;
+            // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSalmon;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 80);
+            this.dataGridView1.Location = new System.Drawing.Point(48, 80);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1134, 422);
+            this.dataGridView1.Size = new System.Drawing.Size(1054, 402);
             this.dataGridView1.TabIndex = 15;
             // 
             // btnConsultar
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnConsultar.Location = new System.Drawing.Point(15, 20);
+            this.btnConsultar.Location = new System.Drawing.Point(48, 25);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(99, 31);
             this.btnConsultar.TabIndex = 17;
@@ -79,7 +127,7 @@ namespace LaboratorioSystem
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(248, 20);
+            this.btnExcluir.Location = new System.Drawing.Point(281, 25);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(99, 31);
             this.btnExcluir.TabIndex = 16;
@@ -88,53 +136,6 @@ namespace LaboratorioSystem
             this.btnExcluir.Click += new System.EventHandler(this.button5_Click);
             this.btnExcluir.MouseLeave += new System.EventHandler(this.mudarCorLeaveExcluir);
             this.btnExcluir.MouseHover += new System.EventHandler(this.mudarCorHoverExcluir);
-            // 
-            // textMatricula
-            // 
-            this.textMatricula.Location = new System.Drawing.Point(189, 26);
-            this.textMatricula.Name = "textMatricula";
-            this.textMatricula.Size = new System.Drawing.Size(53, 20);
-            this.textMatricula.TabIndex = 18;
-            // 
-            // lblMatricula
-            // 
-            this.lblMatricula.AutoSize = true;
-            this.lblMatricula.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMatricula.Location = new System.Drawing.Point(130, 29);
-            this.lblMatricula.Name = "lblMatricula";
-            this.lblMatricula.Size = new System.Drawing.Size(53, 13);
-            this.lblMatricula.TabIndex = 19;
-            this.lblMatricula.Text = "Matricula:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(1024, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 34);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Voltar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(430, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 31);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Consultar ou excluir dados do paciente";
             // 
             // FormConfiguracaoDadosUsuario
             // 
