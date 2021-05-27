@@ -22,20 +22,20 @@
 
 # Principal
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/1.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/imagens/1.png)
 
 # Agendamento
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/2.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/imagens/2.png)
 
 # Administrador
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/3.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/imagens/3.png)
 
 # Gerenciamento de funcionario
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/4.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/imagens/4.png)
 
 # Consultar ou excluir dados do paciente
 
-![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/5.png)
+![imagem](https://github.com/leandroluizpereira/project-visual-studio-crud/blob/main/imagens/5.png)
